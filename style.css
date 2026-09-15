@@ -1,486 +1,891 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Über mich | Mohammad Solaiman Yussofzai</title>
-
-    <meta
-        name="description"
-        content="Über Mohammad Solaiman Yussofzai – IT Support, Systemintegration und Technik."
-    >
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<!-- ================= NAVIGATION ================= -->
-
-<header class="navbar">
-    <div class="nav-container">
-
-        <a href="index.html" class="logo">
-            Solaiman<span>.</span>
-        </a>
-
-        <nav>
-            <a href="index.html">Start</a>
-            <a href="about.html" class="active">Über mich</a>
-            <a href="skills.html">Fähigkeiten</a>
-            <a href="experience.html">Werdegang</a>
-            <a href="projects.html">Projekte</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Kontakt</a>
-        </nav>
-
-        <a
-            href="https://github.com/yussofzais-cloud"
-            target="_blank"
-            class="github-button"
-        >
-            GitHub
-        </a>
-
-    </div>
-</header>
-
-
-<!-- ================= ABOUT HERO ================= -->
-
-<main>
-
-<section class="page-hero">
-
-    <div class="page-hero-content">
-
-        <span class="section-command">
-            $ cat bio.txt
-        </span>
-
-        <h1>
-            Über <span>mich</span>
-        </h1>
-
-        <p>
-            Einblick in meinen Weg, meine Interessen und meine
-            Entwicklung im Bereich IT und Systemintegration.
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- ================= ABOUT ================= -->
-
-<section class="about-section section">
-
-    <div class="about-grid">
-
-        <div class="about-text">
-
-            <span class="terminal-label">
-                $ whoami
-            </span>
-
-            <h2>
-                Technik verstehen.<br>
-                Probleme lösen.<br>
-                Weiterentwickeln.
-            </h2>
-
-            <p>
-                Mein Interesse an der IT entstand vor allem durch meine
-                Begeisterung für Technik, Computer und die Frage, wie
-                Systeme funktionieren.
-            </p>
-
-            <p>
-                Besonders interessant finde ich praktische Aufgaben:
-                Fehler analysieren, Hardware einrichten, technische
-                Probleme lösen und Anwender bei IT-Fragen unterstützen.
-            </p>
-
-            <p>
-                Während meiner bisherigen praktischen Erfahrung im
-                IT-Bereich konnte ich unter anderem mit ServiceNow,
-                Windows-Systemen, Hardware, Laptops und Apple-Geräten
-                arbeiten.
-            </p>
-
-            <p>
-                Dabei habe ich gemerkt, dass ich mich langfristig im
-                Bereich Systemintegration weiterentwickeln möchte.
-                Mein Ziel ist es, meine praktischen Erfahrungen mit
-                einer erfolgreichen Ausbildung zum
-                Fachinformatiker für Systemintegration zu verbinden.
-            </p>
-
-            <p>
-                Aktuell arbeite ich deshalb daran, mein technisches
-                Wissen weiter auszubauen und neue praktische Erfahrungen
-                zu sammeln.
-            </p>
-
-        </div>
-
-
-        <!-- TERMINAL PROFILE -->
-
-        <div class="terminal-window about-terminal">
-
-            <div class="terminal-header">
-
-                <div class="terminal-dots">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-                <span>profile.txt</span>
-
-            </div>
-
-            <div class="terminal-body">
-
-                <p>
-                    <span class="green">$</span> cat profile.txt
-                </p>
-
-                <br>
-
-                <p>
-                    <span class="green">Name:</span>
-                    Mohammad Solaiman Yussofzai
-                </p>
-
-                <p>
-                    <span class="green">Location:</span>
-                    Hamburg, Deutschland
-                </p>
-
-                <p>
-                    <span class="green">Focus:</span>
-                    IT Support
-                </p>
-
-                <p>
-                    <span class="green">Specialization:</span>
-                    Systemintegration
-                </p>
-
-                <p>
-                    <span class="green">Interests:</span>
-                    Hardware / Netzwerke / Technik
-                </p>
-
-                <p>
-                    <span class="green">Goal:</span>
-                    Fachinformatiker für Systemintegration
-                </p>
-
-                <p>
-                    <span class="green">Status:</span>
-                    <span class="status">
-                        ● Offen für neue Möglichkeiten
-                    </span>
-                </p>
-
-                <br>
-
-                <p>
-                    <span class="green">$</span>
-                    echo "keep_learning"
-                </p>
-
-                <p class="terminal-output">
-                    keep_learning
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= PROFILE ================= -->
-
-<section class="section">
-
-    <div class="section-heading">
-
-        <span class="section-command">
-            $ ls profile
-        </span>
-
-        <h2>Profilübersicht</h2>
-
-        <p>
-            Die wichtigsten Punkte über meinen aktuellen Weg
-            und meine beruflichen Ziele.
-        </p>
-
-    </div>
-
-
-    <div class="profile-grid">
-
-        <div class="profile-card">
-
-            <span class="profile-label">
-                STATUS
-            </span>
-
-            <h3>
-                Offen für neue Möglichkeiten
-            </h3>
-
-            <p>
-                Ich suche nach Möglichkeiten, meine IT-Kenntnisse
-                praktisch einzusetzen und weiterzuentwickeln.
-            </p>
-
-        </div>
-
-
-        <div class="profile-card">
-
-            <span class="profile-label">
-                FOKUS
-            </span>
-
-            <h3>
-                IT Support / Systemintegration
-            </h3>
-
-            <p>
-                Technischer Support, Hardware, Systeme,
-                Netzwerke und Problemlösung.
-            </p>
-
-        </div>
-
-
-        <div class="profile-card">
-
-            <span class="profile-label">
-                LERNSTACK
-            </span>
-
-            <h3>
-                Windows · Hardware · Netzwerke
-            </h3>
-
-            <p>
-                Zusätzlich erweitere ich meine Kenntnisse in
-                Git, GitHub, HTML, CSS und JavaScript.
-            </p>
-
-        </div>
-
-
-        <div class="profile-card">
-
-            <span class="profile-label">
-                ZIEL
-            </span>
-
-            <h3>
-                Fachinformatiker für Systemintegration
-            </h3>
-
-            <p>
-                Mein langfristiges Ziel ist eine erfolgreiche
-                Ausbildung und eine berufliche Zukunft in der IT.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= PRINCIPLES ================= -->
-
-<section class="section principles-section">
-
-    <div class="section-heading">
-
-        <span class="section-command">
-            $ cat principles.txt
-        </span>
-
-        <h2>Wie ich arbeite</h2>
-
-        <p>
-            Grundprinzipien, die mich beim Lernen und Arbeiten
-            begleiten.
-        </p>
-
-    </div>
-
-
-    <div class="principles-grid">
-
-        <div class="principle-card">
-
-            <div class="principle-number">
-                01
-            </div>
-
-            <h3>
-                Praxisorientiertes Lernen
-            </h3>
-
-            <p>
-                Ich lerne am besten, wenn ich Dinge selbst ausprobiere,
-                Fehler analysiere und eigene Lösungen entwickle.
-            </p>
-
-        </div>
-
-
-        <div class="principle-card">
-
-            <div class="principle-number">
-                02
-            </div>
-
-            <h3>
-                Probleme lösen
-            </h3>
-
-            <p>
-                Bei technischen Problemen versuche ich systematisch
-                herauszufinden, wo die Ursache liegt und wie sich
-                eine passende Lösung umsetzen lässt.
-            </p>
-
-        </div>
-
-
-        <div class="principle-card">
-
-            <div class="principle-number">
-                03
-            </div>
-
-            <h3>
-                Weiterentwickeln
-            </h3>
-
-            <p>
-                Die IT verändert sich ständig. Deshalb möchte ich
-                kontinuierlich neue Technologien kennenlernen und
-                meine Kenntnisse erweitern.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= GOAL ================= -->
-
-<section class="cta-section">
-
-    <div class="cta-terminal">
-        $ echo "future"
-    </div>
-
-    <h2>
-        Schritt für Schritt weiter.
-    </h2>
-
-    <p>
-        Mein Ziel ist es, praktische Erfahrung zu sammeln,
-        meine technischen Fähigkeiten auszubauen und langfristig
-        in der IT zu arbeiten.
-    </p>
-
-    <div class="hero-buttons">
-
-        <a href="skills.html" class="button primary">
-            Meine Fähigkeiten
-        </a>
-
-        <a href="projects.html" class="button secondary">
-            Projekte ansehen
-        </a>
-
-    </div>
-
-</section>
-
-</main>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-    <div class="footer-container">
-
-        <div class="footer-brand">
-
-            <a href="index.html" class="logo">
-                Solaiman<span>.</span>
-            </a>
-
-            <p>
-                IT Support · Systemintegration · Technik
-            </p>
-
-        </div>
-
-
-        <div class="footer-links">
-
-            <a
-                href="https://github.com/yussofzais-cloud"
-                target="_blank"
-            >
-                GitHub
-            </a>
-
-            <a href="contact.html">
-                Kontakt
-            </a>
-
-            <a href="mailto:solaimanyussofzai@gmail.com">
-                E-Mail
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <div class="footer-bottom">
-
-        <span>
-            © 2026 Mohammad Solaiman Yussofzai
-        </span>
-
-        <span>
-            Built with HTML, CSS, JavaScript, GitHub & Vercel
-        </span>
-
-        <span class="footer-status">
-            ● Offen für neue Möglichkeiten
-        </span>
-
-    </div>
-
-</footer>
-
-</body>
-</html>
+/* =========================================
+   SOLAIMAN IT PORTFOLIO
+   Global Styles
+========================================= */
+
+:root {
+    --bg: #050505;
+    --bg-soft: #0a0a0a;
+    --card: #0d0d0d;
+    --border: #1d1d1d;
+    --text: #f1f1f1;
+    --muted: #8b8b8b;
+    --green: #39ff88;
+    --green-dark: #0c2d1a;
+    --max-width: 1180px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(92%, var(--max-width));
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(5, 5, 5, 0.94);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(12px);
+}
+
+.nav-container {
+    min-height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    font-family: monospace;
+    font-size: 22px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.logo span,
+.green {
+    color: var(--green);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.nav-links a {
+    color: #aaa;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--green);
+}
+
+.github-btn {
+    border: 1px solid #303030;
+    padding: 9px 14px;
+    border-radius: 6px;
+}
+
+.github-btn:hover {
+    border-color: var(--green);
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero,
+.page-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero {
+    min-height: 720px;
+    display: flex;
+    align-items: center;
+}
+
+.hero::before,
+.page-hero::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: rgba(57, 255, 136, 0.04);
+    filter: blur(100px);
+    border-radius: 50%;
+    top: 10%;
+    right: 5%;
+    pointer-events: none;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.terminal-line {
+    color: var(--green);
+    font-family: monospace;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.hero h1,
+.page-hero h1 {
+    font-size: clamp(48px, 7vw, 82px);
+    line-height: 1;
+    letter-spacing: -3px;
+    margin-bottom: 25px;
+}
+
+.hero h2 {
+    color: #ccc;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 22px;
+}
+
+.hero p,
+.page-hero p {
+    color: var(--muted);
+    max-width: 650px;
+    font-size: 17px;
+}
+
+.page-hero {
+    padding: 130px 0 100px;
+    border-bottom: 1px solid var(--border);
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.btn {
+    display: inline-block;
+    padding: 13px 21px;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.btn-primary {
+    background: var(--green);
+    color: #020202;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(57, 255, 136, 0.15);
+}
+
+.btn-secondary {
+    border: 1px solid #303030;
+    color: #ddd;
+}
+
+.btn-secondary:hover {
+    border-color: var(--green);
+    color: var(--green);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+
+/* =========================================
+   TERMINAL
+========================================= */
+
+.terminal-window,
+.contact-terminal {
+    background: #080808;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.terminal-header {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 12px 15px;
+    background: #111;
+    border-bottom: 1px solid var(--border);
+}
+
+.terminal-title {
+    margin-left: 8px;
+    color: #777;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    display: block;
+}
+
+.dot.red {
+    background: #ff5f56;
+}
+
+.dot.yellow {
+    background: #ffbd2e;
+}
+
+.dot.green-dot {
+    background: #27c93f;
+}
+
+.terminal-body {
+    padding: 25px;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+.terminal-output {
+    color: #888;
+    margin: 5px 0 18px;
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.section {
+    padding: 110px 0;
+}
+
+.section-dark {
+    background: var(--bg-soft);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.section-heading {
+    margin-bottom: 45px;
+}
+
+.section-number {
+    color: var(--green);
+    font-family: monospace;
+    font-size: 13px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    margin-top: 7px;
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.profile-grid,
+.principles-grid,
+.skills-grid,
+.tools-grid,
+.projects-grid,
+.blog-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.profile-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.profile-card,
+.principle-card,
+.skill-category,
+.tool-card,
+.project-card,
+.blog-card,
+.contact-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    transition: 0.25s ease;
+}
+
+.profile-card,
+.principle-card,
+.tool-card {
+    padding: 25px;
+}
+
+.profile-card:hover,
+.principle-card:hover,
+.tool-card:hover,
+.project-card:hover,
+.blog-card:hover,
+.contact-card:hover {
+    border-color: #2c543b;
+    transform: translateY(-3px);
+}
+
+.card-label,
+.contact-label {
+    display: block;
+    color: #666;
+    font-family: monospace;
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+.profile-card strong {
+    font-size: 17px;
+}
+
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.about-text p {
+    color: #aaa;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.profile-terminal {
+    position: sticky;
+    top: 110px;
+}
+
+.principles-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.principle-card h3 {
+    margin-bottom: 10px;
+}
+
+.principle-card p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+
+/* =========================================
+   SKILLS
+========================================= */
+
+.skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.skill-category {
+    padding: 30px;
+}
+
+.skill-category h3 {
+    margin-bottom: 25px;
+}
+
+.skill-item {
+    margin-bottom: 22px;
+}
+
+.skill-name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+.skill-name span:last-child {
+    color: var(--green);
+}
+
+.skill-bar {
+    height: 5px;
+    background: #1b1b1b;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    background: var(--green);
+}
+
+.tools-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.tool-card {
+    text-align: center;
+    font-family: monospace;
+}
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #292929;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 55px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 4px;
+    top: 5px;
+    width: 11px;
+    height: 11px;
+    border: 2px solid var(--green);
+    background: var(--bg);
+    border-radius: 50%;
+}
+
+.timeline-date {
+    color: var(--green);
+    font-family: monospace;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.timeline-item h3 {
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.timeline-company {
+    color: #777;
+    margin-bottom: 12px;
+}
+
+.timeline-item p {
+    color: var(--muted);
+    max-width: 700px;
+}
+
+
+/* =========================================
+   PROJECTS
+========================================= */
+
+.projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.project-card {
+    padding: 30px;
+}
+
+.project-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: var(--muted);
+    margin-bottom: 22px;
+}
+
+.project-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 22px;
+}
+
+.project-tag,
+.blog-tag {
+    display: inline-block;
+    border: 1px solid #263d2f;
+    color: var(--green);
+    padding: 5px 9px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 11px;
+}
+
+.project-links {
+    display: flex;
+    gap: 18px;
+}
+
+.project-links a {
+    color: #bbb;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+.project-links a:hover {
+    color: var(--green);
+}
+
+.github-section {
+    margin-top: 60px;
+    padding: 35px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: #080808;
+}
+
+.github-section p {
+    color: var(--muted);
+    margin: 10px 0 20px;
+}
+
+
+/* =========================================
+   BLOG
+========================================= */
+
+.blog-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.blog-card {
+    overflow: hidden;
+}
+
+.blog-terminal {
+    padding: 18px 20px;
+    background: #111;
+    border-bottom: 1px solid var(--border);
+    color: var(--green);
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.blog-content {
+    padding: 25px;
+}
+
+.blog-content h3 {
+    margin: 18px 0 12px;
+    font-size: 20px;
+}
+
+.blog-content p {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.blog-meta {
+    display: flex;
+    gap: 8px;
+    color: #666;
+    font-family: monospace;
+    font-size: 11px;
+}
+
+.coming-soon {
+    text-align: center;
+}
+
+.coming-soon .terminal-window {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    text-align: left;
+}
+
+.coming-soon h2 {
+    margin-bottom: 10px;
+}
+
+.coming-soon > p {
+    color: var(--muted);
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.contact-intro {
+    color: var(--muted);
+    max-width: 550px;
+    margin-bottom: 30px;
+}
+
+.contact-details {
+    display: grid;
+    gap: 15px;
+}
+
+.contact-card {
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.contact-icon {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #263d2f;
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.contact-card a {
+    color: #ddd;
+}
+
+.contact-card a:hover {
+    color: var(--green);
+}
+
+.contact-card p {
+    color: #aaa;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.cta-section {
+    padding: 100px 0;
+}
+
+.cta-box {
+    text-align: center;
+    padding: 70px 30px;
+    border: 1px solid var(--border);
+    background: #080808;
+    border-radius: 10px;
+}
+
+.cta-box .terminal-line {
+    margin-bottom: 20px;
+}
+
+.cta-box h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.cta-box p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: var(--muted);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    border-top: 1px solid var(--border);
+    padding: 35px 0;
+    background: #030303;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.footer strong {
+    font-family: monospace;
+}
+
+.footer p {
+    color: #666;
+    font-size: 12px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #777;
+    font-size: 13px;
+}
+
+.footer-links a:hover {
+    color: var(--green);
+}
+
+.footer-status {
+    color: #777;
+    font-family: monospace;
+    font-size: 11px;
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+    background: var(--green);
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .nav-container {
+        flex-direction: column;
+        padding: 18px 0;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-grid,
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 100px 0;
+    }
+
+    .profile-terminal {
+        position: static;
+    }
+
+    .profile-grid,
+    .principles-grid,
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .github-btn {
+        display: none;
+    }
+
+    .hero h1,
+    .page-hero h1 {
+        font-size: 48px;
+    }
+
+    .hero h2 {
+        font-size: 19px;
+    }
+
+    .section {
+        padding: 75px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .skills-grid,
+    .projects-grid,
+    .profile-grid,
+    .principles-grid,
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-box h2 {
+        font-size: 28px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .page-hero {
+        padding: 90px 0 70px;
+    }
+}
