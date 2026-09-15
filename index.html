@@ -1,88 +1,182 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Mohammad Solaiman Yussofzai | IT Portfolio</title>
 
-    <meta name="description" content="IT-Portfolio von Mohammad Solaiman Yussofzai – IT Support, Systemintegration und technische Projekte.">
+    <meta name="description"
+        content="IT-Portfolio von Mohammad Solaiman Yussofzai – IT Support, Systemintegration und technische Projekte.">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <nav class="navbar">
-            <div class="logo">Solaiman<span>.</span></div>
+    <!-- NAVIGATION -->
 
-            <div class="nav-links">
-                <a href="#about">Über mich</a>
-                <a href="#skills">Skills</a>
-                <a href="#experience">Erfahrung</a>
-                <a href="#projects">Projekte</a>
-                <a href="#contact">Kontakt</a>
-            </div>
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+            Solaiman<span>.</span>
+        </a>
+
+        <nav>
+            <a href="#about">Über mich</a>
+            <a href="#skills">Fähigkeiten</a>
+            <a href="#experience">Erfahrung</a>
+            <a href="#projects">Projekte</a>
+            <a href="#contact">Kontakt</a>
         </nav>
+
+        <a href="https://github.com/yussofzais-cloud"
+           target="_blank"
+           class="github-button">
+            GitHub
+        </a>
+
     </header>
 
 
     <main>
 
-        <!-- STARTSEITE -->
-        <section class="hero">
+        <!-- HERO / START -->
 
-            <div class="hero-text">
+        <section id="home" class="hero">
 
-                <p class="small-title">IT PORTFOLIO</p>
+            <div class="hero-content">
+
+                <p class="terminal-command">
+                    $ whoami
+                </p>
 
                 <h1>
                     Mohammad Solaiman<br>
                     <span>Yussofzai</span>
                 </h1>
 
-                <p class="hero-description">
-                    IT-interessierter und angehender Fachinformatiker
-                    für Systemintegration mit Interesse an IT-Support,
-                    Netzwerken, Hardware und technischen Lösungen.
+                <h2>
+                    IT Support & angehender Fachinformatiker
+                    für Systemintegration
+                </h2>
+
+                <p class="hero-text">
+                    Ich interessiere mich für IT, Hardware, Netzwerke
+                    und die Lösung technischer Probleme. Durch meine
+                    bisherigen praktischen Erfahrungen im IT-Support
+                    möchte ich meine Kenntnisse weiterentwickeln und
+                    langfristig im IT-Bereich arbeiten.
                 </p>
 
-                <div class="buttons">
+                <div class="hero-buttons">
+
                     <a href="#projects" class="button primary">
-                        Meine Projekte
+                        Zu meinen Projekten
                     </a>
 
                     <a href="#contact" class="button secondary">
-                        Kontakt
+                        Kontakt aufnehmen
                     </a>
+
                 </div>
 
             </div>
 
-            <div class="hero-card">
 
-                <div class="terminal">
-                    <div class="terminal-top">
+            <div class="terminal-window">
+
+                <div class="terminal-header">
+
+                    <div class="terminal-dots">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
 
-                    <div class="terminal-content">
-                        <p><span class="green">></span> whoami</p>
-                        <p>Mohammad Solaiman Yussofzai</p>
+                    <p>solaiman@portfolio:~</p>
 
-                        <p><span class="green">></span> role</p>
-                        <p>IT Support / Systemintegration</p>
-
-                        <p><span class="green">></span> location</p>
-                        <p>Hamburg, Deutschland</p>
-
-                        <p><span class="green">></span> status</p>
-                        <p class="green">● Available</p>
-                    </div>
                 </div>
+
+
+                <div class="terminal-body">
+
+                    <p>
+                        <span class="green">$</span> location
+                    </p>
+
+                    <p class="terminal-result">
+                        Hamburg, Deutschland
+                    </p>
+
+                    <p>
+                        <span class="green">$</span> focus
+                    </p>
+
+                    <p class="terminal-result">
+                        IT Support / Systemintegration
+                    </p>
+
+                    <p>
+                        <span class="green">$</span> status
+                    </p>
+
+                    <p class="terminal-result green">
+                        ● Offen für neue Möglichkeiten
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- STATS -->
+
+        <section class="stats">
+
+            <div class="stat">
+
+                <strong>1</strong>
+
+                <span>
+                    IT-Ausbildung
+                </span>
+
+            </div>
+
+
+            <div class="stat">
+
+                <strong>3+</strong>
+
+                <span>
+                    Monate IT-Praxis
+                </span>
+
+            </div>
+
+
+            <div class="stat">
+
+                <strong>100+</strong>
+
+                <span>
+                    iPads konfiguriert
+                </span>
+
+            </div>
+
+
+            <div class="stat">
+
+                <strong>∞</strong>
+
+                <span>
+                    Lernbereitschaft
+                </span>
 
             </div>
 
@@ -90,95 +184,236 @@
 
 
         <!-- ÜBER MICH -->
+
         <section id="about" class="section">
 
-            <p class="section-number">01</p>
+            <p class="section-label">
+                01 / ÜBER MICH
+            </p>
 
-            <h2>Über mich</h2>
+            <h2>
+                Wer ich bin
+            </h2>
 
-            <div class="about-text">
+            <div class="about-grid">
 
-                <p>
-                    Ich interessiere mich schon seit mehreren Jahren für
-                    Informatik und technische Systeme. Besonders spannend
-                    finde ich es, technische Probleme zu lösen und
-                    herauszufinden, wie Systeme und Netzwerke funktionieren.
-                </p>
+                <div>
 
-                <p>
-                    Meine bisherigen Erfahrungen konnte ich unter anderem
-                    im IT-Support sammeln. Dabei habe ich mit Tickets,
-                    Hardware, Fehleranalyse, Einrichtung von Geräten und
-                    verschiedenen IT-Systemen gearbeitet.
-                </p>
+                    <p>
+                        Ich interessiere mich seit mehreren Jahren
+                        für Informatik und technische Systeme.
+                        Besonders spannend finde ich es, technische
+                        Probleme zu analysieren und Lösungen dafür
+                        zu finden.
+                    </p>
 
-                <p>
-                    Mein Ziel ist es, mich langfristig im IT-Bereich
-                    weiterzuentwickeln und eine Ausbildung zum
-                    Fachinformatiker für Systemintegration erfolgreich
-                    abzuschließen.
-                </p>
+                    <p>
+                        Während meiner bisherigen Ausbildung zum
+                        Fachinformatiker für Systemintegration konnte
+                        ich praktische Erfahrungen im IT-Support sammeln.
+                    </p>
+
+                    <p>
+                        Dabei habe ich unter anderem mit ServiceNow
+                        gearbeitet, Hardware eingerichtet und
+                        ausgetauscht, Fehler analysiert und Anwender
+                        unterstützt.
+                    </p>
+
+                </div>
+
+
+                <div class="about-terminal">
+
+                    <p>
+                        <span class="green">$</span> cat about.txt
+                    </p>
+
+                    <p>
+                        Interesse: IT & Technik
+                    </p>
+
+                    <p>
+                        Schwerpunkt: Systemintegration
+                    </p>
+
+                    <p>
+                        Standort: Hamburg
+                    </p>
+
+                    <p>
+                        Ziel: IT-Ausbildung erfolgreich abschließen
+                    </p>
+
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- SKILLS -->
+        <!-- FÄHIGKEITEN -->
+
         <section id="skills" class="section">
 
-            <p class="section-number">02</p>
+            <p class="section-label">
+                02 / FÄHIGKEITEN
+            </p>
 
-            <h2>Meine Skills</h2>
+            <h2>
+                Technologien & Skills
+            </h2>
+
+            <p class="section-intro">
+                Bereiche, mit denen ich bereits gearbeitet habe
+                oder in denen ich meine Kenntnisse weiter ausbaue.
+            </p>
+
 
             <div class="skills-grid">
 
-                <div class="skill">
-                    <h3>IT Support</h3>
+                <div class="skill-card">
+
+                    <span class="skill-number">
+                        01
+                    </span>
+
+                    <h3>
+                        IT Support
+                    </h3>
+
                     <p>
-                        Fehleranalyse, Anwendersupport,
-                        Tickets und technische Dokumentation.
+                        Anwendersupport, Fehleranalyse,
+                        Ticketbearbeitung und technische
+                        Dokumentation.
                     </p>
+
                 </div>
 
-                <div class="skill">
-                    <h3>Hardware</h3>
+
+                <div class="skill-card">
+
+                    <span class="skill-number">
+                        02
+                    </span>
+
+                    <h3>
+                        Hardware
+                    </h3>
+
                     <p>
                         Einrichtung, Austausch und
                         Fehlerbehebung von IT-Geräten.
                     </p>
+
                 </div>
 
-                <div class="skill">
-                    <h3>Netzwerke</h3>
+
+                <div class="skill-card">
+
+                    <span class="skill-number">
+                        03
+                    </span>
+
+                    <h3>
+                        ServiceNow
+                    </h3>
+
+                    <p>
+                        Bearbeitung und Dokumentation von
+                        Tickets und Incidents.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <span class="skill-number">
+                        04
+                    </span>
+
+                    <h3>
+                        Windows
+                    </h3>
+
+                    <p>
+                        Einrichtung, Konfiguration und
+                        grundlegendes Troubleshooting.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <span class="skill-number">
+                        05
+                    </span>
+
+                    <h3>
+                        Netzwerke
+                    </h3>
+
                     <p>
                         Grundlagen von Netzwerken,
                         Geräten und Systemen.
                     </p>
+
                 </div>
 
-                <div class="skill">
-                    <h3>ServiceNow</h3>
-                    <p>
-                        Arbeiten mit Tickets,
-                        Incidents und Dokumentation.
-                    </p>
-                </div>
 
-                <div class="skill">
-                    <h3>Windows</h3>
-                    <p>
-                        Einrichtung, Konfiguration und
-                        Troubleshooting.
-                    </p>
-                </div>
+                <div class="skill-card">
 
-                <div class="skill">
-                    <h3>Git & GitHub</h3>
+                    <span class="skill-number">
+                        06
+                    </span>
+
+                    <h3>
+                        Git & GitHub
+                    </h3>
+
                     <p>
                         Versionskontrolle und Verwaltung
                         eigener Projekte.
                     </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <span class="skill-number">
+                        07
+                    </span>
+
+                    <h3>
+                        HTML / CSS
+                    </h3>
+
+                    <p>
+                        Aufbau und Gestaltung eigener
+                        Webseiten und Projekte.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <span class="skill-number">
+                        08
+                    </span>
+
+                    <h3>
+                        JavaScript
+                    </h3>
+
+                    <p>
+                        Grundlagen der Programmierung
+                        und Entwicklung eigener Projekte.
+                    </p>
+
                 </div>
 
             </div>
@@ -187,37 +422,53 @@
 
 
         <!-- ERFAHRUNG -->
+
         <section id="experience" class="section">
 
-            <p class="section-number">03</p>
+            <p class="section-label">
+                03 / ERFAHRUNG
+            </p>
 
-            <h2>Erfahrung</h2>
+            <h2>
+                Meine Erfahrung
+            </h2>
+
 
             <div class="experience-card">
 
-                <div class="experience-date">
+                <div class="experience-year">
                     2025
                 </div>
 
-                <div>
-                    <h3>Fachinformatiker für Systemintegration</h3>
 
-                    <h4>Veolia</h4>
+                <div class="experience-content">
 
-                    <p>
-                        Während meiner Ausbildung konnte ich praktische
-                        Erfahrungen im IT-Support sammeln. Zu meinen
-                        Aufgaben gehörten unter anderem die Bearbeitung
-                        von Tickets, Fehleranalyse, Hardware-Einrichtung,
-                        Laptop-Setup und Unterstützung von Anwendern.
+                    <p class="experience-company">
+                        Veolia
                     </p>
 
+                    <h3>
+                        Fachinformatiker für Systemintegration
+                    </h3>
+
+                    <p>
+                        Praktische Erfahrungen im IT-Support,
+                        unter anderem mit ServiceNow,
+                        Hardware-Einrichtung, Fehleranalyse,
+                        Laptop-Setup und Anwenderbetreuung.
+                    </p>
+
+
                     <div class="tags">
-                        <span>IT Support</span>
+
                         <span>ServiceNow</span>
+                        <span>IT Support</span>
                         <span>Hardware</span>
+                        <span>Windows</span>
                         <span>Troubleshooting</span>
+
                     </div>
+
                 </div>
 
             </div>
@@ -226,48 +477,170 @@
 
 
         <!-- PROJEKTE -->
+
         <section id="projects" class="section">
 
-            <p class="section-number">04</p>
+            <p class="section-label">
+                04 / PROJEKTE
+            </p>
 
-            <h2>Projekte</h2>
+            <h2>
+                Meine Projekte
+            </h2>
+
+            <p class="section-intro">
+                Praktische Projekte und Aufgaben, an denen ich
+                gearbeitet habe. Dieser Bereich wird mit neuen
+                GitHub-Projekten weiter wachsen.
+            </p>
+
 
             <div class="projects-grid">
 
-                <div class="project">
 
-                    <p class="project-number">01</p>
+                <!-- PROJEKT 1 -->
 
-                    <h3>IT Portfolio</h3>
+                <article class="project-card">
+
+                    <div class="project-top">
+
+                        <span class="project-number">
+                            01
+                        </span>
+
+                        <span class="project-type">
+                            WEBSITE
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        IT Portfolio
+                    </h3>
 
                     <p>
-                        Meine persönliche Portfolio-Website mit
-                        GitHub und Vercel.
+                        Meine persönliche Portfolio-Website zur
+                        Darstellung meiner IT-Erfahrungen,
+                        Fähigkeiten und zukünftigen Projekte.
                     </p>
 
+
                     <div class="tags">
+
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
                         <span>GitHub</span>
                         <span>Vercel</span>
+
                     </div>
 
-                </div>
+
+                    <a
+                        href="https://github.com/yussofzais-cloud/solaiman-portfolio"
+                        target="_blank"
+                        class="project-link"
+                    >
+                        GitHub ansehen →
+                    </a>
+
+                </article>
 
 
-                <div class="project">
+                <!-- PROJEKT 2 -->
 
-                    <p class="project-number">02</p>
+                <article class="project-card">
 
-                    <h3>Weitere Projekte</h3>
+                    <div class="project-top">
+
+                        <span class="project-number">
+                            02
+                        </span>
+
+                        <span class="project-type">
+                            IT SUPPORT
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        iPad Deployment
+                    </h3>
 
                     <p>
-                        Weitere eigene IT-Projekte und praktische
-                        Übungen werden hier in Zukunft ergänzt.
+                        Selbstständige Konfiguration und Vorbereitung
+                        von rund 100 Apple iPads für eine interne
+                        Firmenumfrage bei Veolia innerhalb einer
+                        vorgegebenen Deadline.
                     </p>
 
-                </div>
+
+                    <div class="tags">
+
+                        <span>Apple iPad</span>
+                        <span>iTunes</span>
+                        <span>Konfiguration</span>
+                        <span>IT Support</span>
+
+                    </div>
+
+
+                    <span class="project-link">
+                        Praktisches IT-Projekt
+                    </span>
+
+                </article>
+
+
+                <!-- PLATZHALTER FÜR ZUKÜNFTIGE PROJEKTE -->
+
+                <article class="project-card future-project">
+
+                    <div class="project-top">
+
+                        <span class="project-number">
+                            03
+                        </span>
+
+                        <span class="project-type">
+                            COMING SOON
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Nächstes Projekt
+                    </h3>
+
+                    <p>
+                        Hier wird zukünftig ein weiteres eigenes
+                        IT-Projekt mit einem direkten GitHub-Link
+                        ergänzt.
+                    </p>
+
+
+                    <span class="project-link">
+                        Bald verfügbar
+                    </span>
+
+                </article>
+
+
+            </div>
+
+
+            <div class="all-projects">
+
+                <a
+                    href="https://github.com/yussofzais-cloud"
+                    target="_blank"
+                    class="button secondary"
+                >
+                    Alle Projekte auf GitHub →
+                </a>
 
             </div>
 
@@ -275,30 +648,29 @@
 
 
         <!-- KONTAKT -->
-        <section id="contact" class="section contact">
 
-            <p class="section-number">05</p>
+        <section id="contact" class="contact-section">
 
-            <h2>Kontakt</h2>
+            <p class="section-label">
+                05 / KONTAKT
+            </p>
+
+            <h2>
+                Bereit für neue Möglichkeiten?
+            </h2>
 
             <p>
-                Du möchtest mich kontaktieren oder mehr über meine
-                IT-Erfahrungen erfahren?
+                Ich möchte mich im IT-Bereich weiterentwickeln,
+                praktische Erfahrungen sammeln und langfristig
+                als Fachinformatiker für Systemintegration arbeiten.
             </p>
+
 
             <a
                 href="mailto:DEINE-EMAIL@EMAIL.DE"
                 class="button primary"
             >
-                E-Mail schreiben
-            </a>
-
-            <a
-                href="https://github.com/"
-                target="_blank"
-                class="github-link"
-            >
-                GitHub
+                Kontakt aufnehmen →
             </a>
 
         </section>
@@ -306,17 +678,66 @@
     </main>
 
 
+    <!-- FOOTER -->
+
     <footer>
 
-        <p>
-            © 2026 Mohammad Solaiman Yussofzai
-        </p>
+        <div class="footer-main">
 
-        <p>
-            Built with HTML, CSS & JavaScript
-        </p>
+            <div>
+
+                <a href="#home" class="logo">
+                    Solaiman<span>.</span>
+                </a>
+
+                <p>
+                    IT Support · Systemintegration · Technik
+                </p>
+
+            </div>
+
+
+            <div class="social-links">
+
+                <a
+                    href="https://github.com/yussofzais-cloud"
+                    target="_blank"
+                >
+                    GitHub
+                </a>
+
+                <a href="#">
+                    LinkedIn
+                </a>
+
+                <a href="mailto:DEINE-EMAIL@EMAIL.DE">
+                    E-Mail
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Mohammad Solaiman Yussofzai
+            </p>
+
+            <p>
+                Built with HTML, CSS, JavaScript, GitHub & Vercel
+            </p>
+
+            <p class="status">
+                ● Offen für neue Möglichkeiten
+            </p>
+
+        </div>
 
     </footer>
 
+
 </body>
+
 </html>
