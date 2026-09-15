@@ -1,865 +1,486 @@
-/* =========================
-   GRUNDLAGEN
-========================= */
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <title>Über mich | Mohammad Solaiman Yussofzai</title>
 
-html {
-    scroll-behavior: smooth;
-}
+    <meta
+        name="description"
+        content="Über Mohammad Solaiman Yussofzai – IT Support, Systemintegration und Technik."
+    >
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #080808;
-    color: #f5f5f5;
-    line-height: 1.6;
-}
+    <link rel="stylesheet" href="style.css">
+</head>
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
+<body>
 
-::selection {
-    background: #00ff88;
-    color: #000;
-}
+<!-- ================= NAVIGATION ================= -->
 
+<header class="navbar">
+    <div class="nav-container">
 
-/* =========================
-   NAVIGATION
-========================= */
+        <a href="index.html" class="logo">
+            Solaiman<span>.</span>
+        </a>
 
-.navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+        <nav>
+            <a href="index.html">Start</a>
+            <a href="about.html" class="active">Über mich</a>
+            <a href="skills.html">Fähigkeiten</a>
+            <a href="experience.html">Werdegang</a>
+            <a href="projects.html">Projekte</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
 
-    width: 100%;
+        <a
+            href="https://github.com/yussofzais-cloud"
+            target="_blank"
+            class="github-button"
+        >
+            GitHub
+        </a>
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    </div>
+</header>
 
-    padding: 20px 6%;
 
-    background: rgba(8, 8, 8, 0.92);
-    backdrop-filter: blur(12px);
+<!-- ================= ABOUT HERO ================= -->
 
-    border-bottom: 1px solid #1d1d1d;
-}
+<main>
 
-.logo {
-    font-size: 23px;
-    font-weight: 800;
-    letter-spacing: -1px;
-}
+<section class="page-hero">
 
-.logo span {
-    color: #00ff88;
-}
+    <div class="page-hero-content">
 
-.navbar nav {
-    display: flex;
-    gap: 28px;
-}
+        <span class="section-command">
+            $ cat bio.txt
+        </span>
 
-.navbar nav a {
-    color: #8f8f8f;
-    font-size: 14px;
-    transition: 0.3s ease;
-}
+        <h1>
+            Über <span>mich</span>
+        </h1>
 
-.navbar nav a:hover {
-    color: #00ff88;
-}
+        <p>
+            Einblick in meinen Weg, meine Interessen und meine
+            Entwicklung im Bereich IT und Systemintegration.
+        </p>
 
-.github-button {
-    padding: 9px 16px;
+    </div>
 
-    border: 1px solid #333;
+</section>
 
-    font-size: 13px;
 
-    transition: 0.3s ease;
-}
+<!-- ================= ABOUT ================= -->
 
-.github-button:hover {
-    border-color: #00ff88;
-    color: #00ff88;
-}
+<section class="about-section section">
 
+    <div class="about-grid">
 
-/* =========================
-   HERO
-========================= */
+        <div class="about-text">
 
-.hero {
-    max-width: 1250px;
-    min-height: 88vh;
+            <span class="terminal-label">
+                $ whoami
+            </span>
 
-    margin: auto;
-    padding: 100px 6%;
+            <h2>
+                Technik verstehen.<br>
+                Probleme lösen.<br>
+                Weiterentwickeln.
+            </h2>
 
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
+            <p>
+                Mein Interesse an der IT entstand vor allem durch meine
+                Begeisterung für Technik, Computer und die Frage, wie
+                Systeme funktionieren.
+            </p>
 
-    align-items: center;
+            <p>
+                Besonders interessant finde ich praktische Aufgaben:
+                Fehler analysieren, Hardware einrichten, technische
+                Probleme lösen und Anwender bei IT-Fragen unterstützen.
+            </p>
 
-    gap: 80px;
-}
+            <p>
+                Während meiner bisherigen praktischen Erfahrung im
+                IT-Bereich konnte ich unter anderem mit ServiceNow,
+                Windows-Systemen, Hardware, Laptops und Apple-Geräten
+                arbeiten.
+            </p>
 
-.terminal-command {
-    color: #00ff88;
+            <p>
+                Dabei habe ich gemerkt, dass ich mich langfristig im
+                Bereich Systemintegration weiterentwickeln möchte.
+                Mein Ziel ist es, meine praktischen Erfahrungen mit
+                einer erfolgreichen Ausbildung zum
+                Fachinformatiker für Systemintegration zu verbinden.
+            </p>
 
-    font-family: monospace;
-    font-size: 15px;
+            <p>
+                Aktuell arbeite ich deshalb daran, mein technisches
+                Wissen weiter auszubauen und neue praktische Erfahrungen
+                zu sammeln.
+            </p>
 
-    margin-bottom: 18px;
-}
+        </div>
 
-.hero h1 {
-    font-size: clamp(48px, 7vw, 82px);
 
-    line-height: 1;
+        <!-- TERMINAL PROFILE -->
 
-    letter-spacing: -4px;
+        <div class="terminal-window about-terminal">
 
-    margin-bottom: 25px;
-}
+            <div class="terminal-header">
 
-.hero h1 span {
-    color: #00ff88;
-}
+                <div class="terminal-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
 
-.hero h2 {
-    max-width: 700px;
+                <span>profile.txt</span>
 
-    font-size: 23px;
+            </div>
 
-    font-weight: 500;
+            <div class="terminal-body">
 
-    color: #d7d7d7;
+                <p>
+                    <span class="green">$</span> cat profile.txt
+                </p>
 
-    margin-bottom: 22px;
-}
+                <br>
 
-.hero-text {
-    max-width: 650px;
+                <p>
+                    <span class="green">Name:</span>
+                    Mohammad Solaiman Yussofzai
+                </p>
 
-    color: #8f8f8f;
+                <p>
+                    <span class="green">Location:</span>
+                    Hamburg, Deutschland
+                </p>
 
-    font-size: 17px;
-}
+                <p>
+                    <span class="green">Focus:</span>
+                    IT Support
+                </p>
 
-.hero-buttons {
-    display: flex;
+                <p>
+                    <span class="green">Specialization:</span>
+                    Systemintegration
+                </p>
 
-    gap: 15px;
+                <p>
+                    <span class="green">Interests:</span>
+                    Hardware / Netzwerke / Technik
+                </p>
 
-    margin-top: 35px;
+                <p>
+                    <span class="green">Goal:</span>
+                    Fachinformatiker für Systemintegration
+                </p>
 
-    flex-wrap: wrap;
-}
+                <p>
+                    <span class="green">Status:</span>
+                    <span class="status">
+                        ● Offen für neue Möglichkeiten
+                    </span>
+                </p>
 
+                <br>
 
-/* =========================
-   BUTTONS
-========================= */
+                <p>
+                    <span class="green">$</span>
+                    echo "keep_learning"
+                </p>
 
-.button {
-    display: inline-block;
+                <p class="terminal-output">
+                    keep_learning
+                </p>
 
-    padding: 13px 21px;
+            </div>
 
-    font-size: 14px;
+        </div>
 
-    font-weight: 700;
+    </div>
 
-    transition: 0.3s ease;
-}
+</section>
 
-.button.primary {
-    background: #00ff88;
-    color: #000;
-}
 
-.button.primary:hover {
-    transform: translateY(-3px);
+<!-- ================= PROFILE ================= -->
 
-    box-shadow:
-        0 12px 35px rgba(0, 255, 136, 0.18);
-}
+<section class="section">
 
-.button.secondary {
-    border: 1px solid #333;
+    <div class="section-heading">
 
-    color: #fff;
-}
+        <span class="section-command">
+            $ ls profile
+        </span>
 
-.button.secondary:hover {
-    border-color: #00ff88;
+        <h2>Profilübersicht</h2>
 
-    color: #00ff88;
-}
+        <p>
+            Die wichtigsten Punkte über meinen aktuellen Weg
+            und meine beruflichen Ziele.
+        </p>
 
+    </div>
 
-/* =========================
-   TERMINAL
-========================= */
 
-.terminal-window {
-    background: #101010;
+    <div class="profile-grid">
 
-    border: 1px solid #252525;
+        <div class="profile-card">
 
-    border-radius: 9px;
+            <span class="profile-label">
+                STATUS
+            </span>
 
-    overflow: hidden;
+            <h3>
+                Offen für neue Möglichkeiten
+            </h3>
 
-    box-shadow:
-        0 25px 70px rgba(0, 0, 0, 0.5);
-}
+            <p>
+                Ich suche nach Möglichkeiten, meine IT-Kenntnisse
+                praktisch einzusetzen und weiterzuentwickeln.
+            </p>
 
-.terminal-header {
-    display: flex;
+        </div>
 
-    align-items: center;
 
-    gap: 15px;
+        <div class="profile-card">
 
-    padding: 13px 17px;
+            <span class="profile-label">
+                FOKUS
+            </span>
 
-    background: #171717;
+            <h3>
+                IT Support / Systemintegration
+            </h3>
 
-    border-bottom: 1px solid #252525;
-}
+            <p>
+                Technischer Support, Hardware, Systeme,
+                Netzwerke und Problemlösung.
+            </p>
 
-.terminal-header p {
-    color: #666;
+        </div>
 
-    font-family: monospace;
 
-    font-size: 12px;
-}
+        <div class="profile-card">
 
-.terminal-dots {
-    display: flex;
+            <span class="profile-label">
+                LERNSTACK
+            </span>
 
-    gap: 6px;
-}
+            <h3>
+                Windows · Hardware · Netzwerke
+            </h3>
 
-.terminal-dots span {
-    width: 9px;
-    height: 9px;
+            <p>
+                Zusätzlich erweitere ich meine Kenntnisse in
+                Git, GitHub, HTML, CSS und JavaScript.
+            </p>
 
-    border-radius: 50%;
+        </div>
 
-    background: #444;
-}
 
-.terminal-body {
-    padding: 35px;
+        <div class="profile-card">
 
-    font-family: monospace;
+            <span class="profile-label">
+                ZIEL
+            </span>
 
-    font-size: 14px;
-}
+            <h3>
+                Fachinformatiker für Systemintegration
+            </h3>
 
-.terminal-body p {
-    margin-bottom: 12px;
+            <p>
+                Mein langfristiges Ziel ist eine erfolgreiche
+                Ausbildung und eine berufliche Zukunft in der IT.
+            </p>
 
-    color: #aaa;
-}
+        </div>
 
-.terminal-result {
-    color: #f0f0f0 !important;
+    </div>
 
-    margin-bottom: 22px !important;
-}
+</section>
 
-.green {
-    color: #00ff88 !important;
-}
 
+<!-- ================= PRINCIPLES ================= -->
 
-/* =========================
-   STATS
-========================= */
+<section class="section principles-section">
 
-.stats {
-    max-width: 1100px;
+    <div class="section-heading">
 
-    margin: auto;
+        <span class="section-command">
+            $ cat principles.txt
+        </span>
 
-    padding: 35px 6%;
+        <h2>Wie ich arbeite</h2>
 
-    display: grid;
+        <p>
+            Grundprinzipien, die mich beim Lernen und Arbeiten
+            begleiten.
+        </p>
 
-    grid-template-columns: repeat(4, 1fr);
+    </div>
 
-    border-top: 1px solid #1c1c1c;
 
-    border-bottom: 1px solid #1c1c1c;
-}
+    <div class="principles-grid">
 
-.stat {
-    text-align: center;
+        <div class="principle-card">
 
-    padding: 15px;
+            <div class="principle-number">
+                01
+            </div>
 
-    border-right: 1px solid #222;
-}
+            <h3>
+                Praxisorientiertes Lernen
+            </h3>
 
-.stat:last-child {
-    border-right: none;
-}
+            <p>
+                Ich lerne am besten, wenn ich Dinge selbst ausprobiere,
+                Fehler analysiere und eigene Lösungen entwickle.
+            </p>
 
-.stat strong {
-    display: block;
+        </div>
 
-    color: #00ff88;
 
-    font-family: monospace;
+        <div class="principle-card">
 
-    font-size: 30px;
-}
+            <div class="principle-number">
+                02
+            </div>
 
-.stat span {
-    color: #777;
+            <h3>
+                Probleme lösen
+            </h3>
 
-    font-size: 12px;
+            <p>
+                Bei technischen Problemen versuche ich systematisch
+                herauszufinden, wo die Ursache liegt und wie sich
+                eine passende Lösung umsetzen lässt.
+            </p>
 
-    text-transform: uppercase;
+        </div>
 
-    letter-spacing: 1px;
-}
 
+        <div class="principle-card">
 
-/* =========================
-   SECTIONS
-========================= */
+            <div class="principle-number">
+                03
+            </div>
 
-.section {
-    max-width: 1100px;
+            <h3>
+                Weiterentwickeln
+            </h3>
 
-    margin: auto;
+            <p>
+                Die IT verändert sich ständig. Deshalb möchte ich
+                kontinuierlich neue Technologien kennenlernen und
+                meine Kenntnisse erweitern.
+            </p>
 
-    padding: 120px 6%;
-}
+        </div>
 
-.section-label {
-    color: #00ff88;
+    </div>
 
-    font-family: monospace;
+</section>
 
-    font-size: 12px;
 
-    letter-spacing: 2px;
+<!-- ================= GOAL ================= -->
 
-    margin-bottom: 15px;
-}
+<section class="cta-section">
 
-.section h2 {
-    font-size: 48px;
+    <div class="cta-terminal">
+        $ echo "future"
+    </div>
 
-    letter-spacing: -2px;
+    <h2>
+        Schritt für Schritt weiter.
+    </h2>
 
-    margin-bottom: 35px;
-}
+    <p>
+        Mein Ziel ist es, praktische Erfahrung zu sammeln,
+        meine technischen Fähigkeiten auszubauen und langfristig
+        in der IT zu arbeiten.
+    </p>
 
-.section-intro {
-    max-width: 700px;
+    <div class="hero-buttons">
 
-    color: #777;
+        <a href="skills.html" class="button primary">
+            Meine Fähigkeiten
+        </a>
 
-    margin-bottom: 40px;
-}
+        <a href="projects.html" class="button secondary">
+            Projekte ansehen
+        </a>
 
+    </div>
 
-/* =========================
-   ÜBER MICH
-========================= */
+</section>
 
-.about-grid {
-    display: grid;
+</main>
 
-    grid-template-columns: 1.2fr 0.8fr;
 
-    gap: 60px;
+<!-- ================= FOOTER ================= -->
 
-    align-items: start;
-}
+<footer>
 
-.about-grid > div:first-child p {
-    color: #999;
+    <div class="footer-container">
 
-    font-size: 17px;
+        <div class="footer-brand">
 
-    margin-bottom: 20px;
-}
+            <a href="index.html" class="logo">
+                Solaiman<span>.</span>
+            </a>
 
-.about-terminal {
-    padding: 30px;
+            <p>
+                IT Support · Systemintegration · Technik
+            </p>
 
-    background: #101010;
+        </div>
 
-    border: 1px solid #242424;
 
-    font-family: monospace;
+        <div class="footer-links">
 
-    color: #aaa;
-}
+            <a
+                href="https://github.com/yussofzais-cloud"
+                target="_blank"
+            >
+                GitHub
+            </a>
 
-.about-terminal p {
-    margin-bottom: 13px;
-}
+            <a href="contact.html">
+                Kontakt
+            </a>
 
+            <a href="mailto:solaimanyussofzai@gmail.com">
+                E-Mail
+            </a>
 
-/* =========================
-   SKILLS
-========================= */
+        </div>
 
-.skills-grid {
-    display: grid;
+    </div>
 
-    grid-template-columns: repeat(4, 1fr);
 
-    gap: 15px;
-}
+    <div class="footer-bottom">
 
-.skill-card {
-    min-height: 210px;
+        <span>
+            © 2026 Mohammad Solaiman Yussofzai
+        </span>
 
-    padding: 25px;
+        <span>
+            Built with HTML, CSS, JavaScript, GitHub & Vercel
+        </span>
 
-    background: #101010;
+        <span class="footer-status">
+            ● Offen für neue Möglichkeiten
+        </span>
 
-    border: 1px solid #222;
+    </div>
 
-    transition: 0.3s ease;
-}
+</footer>
 
-.skill-card:hover {
-    transform: translateY(-5px);
-
-    border-color: #00ff88;
-}
-
-.skill-number {
-    color: #00ff88;
-
-    font-family: monospace;
-
-    font-size: 12px;
-}
-
-.skill-card h3 {
-    margin-top: 30px;
-
-    margin-bottom: 12px;
-
-    font-size: 20px;
-}
-
-.skill-card p {
-    color: #777;
-
-    font-size: 14px;
-}
-
-
-/* =========================
-   ERFAHRUNG
-========================= */
-
-.experience-card {
-    display: grid;
-
-    grid-template-columns: 100px 1fr;
-
-    gap: 35px;
-
-    padding: 35px;
-
-    background: #101010;
-
-    border-left: 3px solid #00ff88;
-}
-
-.experience-year {
-    color: #00ff88;
-
-    font-family: monospace;
-}
-
-.experience-company {
-    color: #00ff88;
-
-    font-family: monospace;
-
-    font-size: 14px;
-
-    margin-bottom: 5px;
-}
-
-.experience-content h3 {
-    font-size: 27px;
-
-    margin-bottom: 18px;
-}
-
-.experience-content > p:not(.experience-company) {
-    color: #888;
-}
-
-
-/* =========================
-   TAGS
-========================= */
-
-.tags {
-    display: flex;
-
-    flex-wrap: wrap;
-
-    gap: 7px;
-
-    margin-top: 22px;
-}
-
-.tags span {
-    padding: 5px 9px;
-
-    border: 1px solid #333;
-
-    color: #999;
-
-    font-family: monospace;
-
-    font-size: 11px;
-}
-
-
-/* =========================
-   PROJEKTE
-========================= */
-
-.projects-grid {
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 18px;
-}
-
-.project-card {
-    position: relative;
-
-    padding: 32px;
-
-    min-height: 330px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    background: #101010;
-
-    border: 1px solid #222;
-
-    transition: 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-
-    border-color: #00ff88;
-}
-
-.project-top {
-    display: flex;
-
-    justify-content: space-between;
-
-    margin-bottom: 35px;
-}
-
-.project-number {
-    color: #00ff88;
-
-    font-family: monospace;
-}
-
-.project-type {
-    color: #555;
-
-    font-family: monospace;
-
-    font-size: 11px;
-}
-
-.project-card h3 {
-    font-size: 26px;
-
-    margin-bottom: 15px;
-}
-
-.project-card p {
-    color: #888;
-
-    font-size: 15px;
-}
-
-.project-link {
-    margin-top: auto;
-
-    padding-top: 25px;
-
-    color: #00ff88;
-
-    font-family: monospace;
-
-    font-size: 13px;
-}
-
-.future-project {
-    border-style: dashed;
-
-    opacity: 0.65;
-}
-
-.all-projects {
-    margin-top: 30px;
-
-    text-align: center;
-}
-
-
-/* =========================
-   KONTAKT
-========================= */
-
-.contact-section {
-    max-width: 900px;
-
-    margin: auto;
-
-    padding: 130px 6%;
-
-    text-align: center;
-}
-
-.contact-section .section-label {
-    display: block;
-}
-
-.contact-section h2 {
-    font-size: clamp(38px, 6vw, 65px);
-
-    line-height: 1.05;
-
-    letter-spacing: -3px;
-
-    margin-bottom: 25px;
-}
-
-.contact-section > p:not(.section-label) {
-    max-width: 650px;
-
-    margin: 0 auto 35px;
-
-    color: #888;
-
-    font-size: 17px;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    border-top: 1px solid #1e1e1e;
-
-    max-width: 1100px;
-
-    margin: auto;
-
-    padding: 45px 6% 30px;
-}
-
-.footer-main {
-    display: flex;
-
-    justify-content: space-between;
-
-    gap: 30px;
-
-    padding-bottom: 35px;
-}
-
-.footer-main p {
-    color: #555;
-
-    font-size: 13px;
-
-    margin-top: 8px;
-}
-
-.social-links {
-    display: flex;
-
-    gap: 25px;
-
-    align-items: center;
-}
-
-.social-links a {
-    color: #888;
-
-    font-size: 13px;
-
-    transition: 0.3s ease;
-}
-
-.social-links a:hover {
-    color: #00ff88;
-}
-
-.footer-bottom {
-    display: flex;
-
-    justify-content: space-between;
-
-    flex-wrap: wrap;
-
-    gap: 15px;
-
-    padding-top: 25px;
-
-    border-top: 1px solid #191919;
-
-    color: #444;
-
-    font-family: monospace;
-
-    font-size: 11px;
-}
-
-.status {
-    color: #00ff88 !important;
-}
-
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 950px) {
-
-    .navbar nav {
-        display: none;
-    }
-
-    .hero {
-        grid-template-columns: 1fr;
-
-        gap: 50px;
-
-        padding-top: 70px;
-    }
-
-    .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-@media (max-width: 650px) {
-
-    .navbar {
-        padding: 18px 5%;
-    }
-
-    .github-button {
-        display: none;
-    }
-
-    .hero {
-        padding: 65px 5%;
-    }
-
-    .hero h1 {
-        font-size: 48px;
-
-        letter-spacing: -2px;
-    }
-
-    .hero h2 {
-        font-size: 19px;
-    }
-
-    .hero-text {
-        font-size: 15px;
-    }
-
-    .section {
-        padding: 85px 5%;
-    }
-
-    .section h2 {
-        font-size: 38px;
-    }
-
-    .stats {
-        grid-template-columns: repeat(2, 1fr);
-
-        padding: 20px 5%;
-    }
-
-    .stat {
-        border-right: none;
-
-        border-bottom: 1px solid #222;
-    }
-
-    .stat:nth-child(3),
-    .stat:nth-child(4) {
-        border-bottom: none;
-    }
-
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .experience-card {
-        grid-template-columns: 1fr;
-
-        gap: 15px;
-    }
-
-    .footer-main {
-        flex-direction: column;
-    }
-
-    .social-links {
-        flex-wrap: wrap;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-    }
-}
+</body>
+</html>
