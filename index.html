@@ -1,743 +1,349 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Mohammad Solaiman Yussofzai | IT Portfolio</title>
 
-    <meta name="description"
-        content="IT-Portfolio von Mohammad Solaiman Yussofzai – IT Support, Systemintegration und technische Projekte.">
+    <meta
+        name="description"
+        content="IT Portfolio von Mohammad Solaiman Yussofzai – IT Support, Systemintegration, Hardware und Netzwerke."
+    >
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
+<!-- ================= NAVIGATION ================= -->
 
-    <header class="navbar">
+<header class="navbar">
+    <div class="nav-container">
 
-        <a href="#home" class="logo">
+        <a href="index.html" class="logo">
             Solaiman<span>.</span>
         </a>
 
         <nav>
-            <a href="#about">Über mich</a>
-            <a href="#skills">Fähigkeiten</a>
-            <a href="#experience">Erfahrung</a>
-            <a href="#projects">Projekte</a>
-            <a href="#contact">Kontakt</a>
+            <a href="index.html" class="active">Start</a>
+            <a href="about.html">Über mich</a>
+            <a href="skills.html">Fähigkeiten</a>
+            <a href="experience.html">Werdegang</a>
+            <a href="projects.html">Projekte</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Kontakt</a>
         </nav>
 
-        <a href="https://github.com/yussofzais-cloud"
-           target="_blank"
-           class="github-button">
+        <a
+            href="https://github.com/yussofzais-cloud"
+            target="_blank"
+            class="github-button"
+        >
             GitHub
         </a>
 
-    </header>
+    </div>
+</header>
 
 
-    <main>
+<!-- ================= HERO ================= -->
 
-        <!-- HERO / START -->
+<main>
 
-        <section id="home" class="hero">
+<section class="hero">
 
-            <div class="hero-content">
+    <div class="hero-content">
 
-                <p class="terminal-command">
-                    $ whoami
-                </p>
+        <div class="terminal-command">
+            <span>$</span> whoami
+        </div>
 
-                <h1>
-                    Mohammad Solaiman<br>
-                    <span>Yussofzai</span>
-                </h1>
+        <h1>
+            Mohammad Solaiman<br>
+            <span>Yussofzai</span>
+        </h1>
 
-                <h2>
-                    IT Support & angehender Fachinformatiker
-                    für Systemintegration
-                </h2>
+        <h2>
+            IT Support & angehender Fachinformatiker
+            für Systemintegration
+        </h2>
 
-                <p class="hero-text">
-                    Ich interessiere mich für IT, Hardware, Netzwerke
-                    und die Lösung technischer Probleme. Durch meine
-                    bisherigen praktischen Erfahrungen im IT-Support
-                    möchte ich meine Kenntnisse weiterentwickeln und
-                    langfristig im IT-Bereich arbeiten.
-                </p>
+        <p>
+            Ich interessiere mich für IT, Hardware, Netzwerke und
+            technische Problemlösungen. Durch meine praktische
+            Erfahrung im IT-Support möchte ich mein Wissen weiter
+            ausbauen und langfristig als Fachinformatiker für
+            Systemintegration arbeiten.
+        </p>
 
-                <div class="hero-buttons">
+        <div class="hero-buttons">
 
-                    <a href="#projects" class="button primary">
-                        Zu meinen Projekten
-                    </a>
-
-                    <a href="#contact" class="button secondary">
-                        Kontakt aufnehmen
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div class="terminal-window">
-
-                <div class="terminal-header">
-
-                    <div class="terminal-dots">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-
-                    <p>solaiman@portfolio:~</p>
-
-                </div>
-
-
-                <div class="terminal-body">
-
-                    <p>
-                        <span class="green">$</span> location
-                    </p>
-
-                    <p class="terminal-result">
-                        Hamburg, Deutschland
-                    </p>
-
-                    <p>
-                        <span class="green">$</span> focus
-                    </p>
-
-                    <p class="terminal-result">
-                        IT Support / Systemintegration
-                    </p>
-
-                    <p>
-                        <span class="green">$</span> status
-                    </p>
-
-                    <p class="terminal-result green">
-                        ● Offen für neue Möglichkeiten
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- STATS -->
-
-        <section class="stats">
-
-            <div class="stat">
-
-                <strong>1</strong>
-
-                <span>
-                    IT-Ausbildung
-                </span>
-
-            </div>
-
-
-            <div class="stat">
-
-                <strong>3+</strong>
-
-                <span>
-                    Monate IT-Praxis
-                </span>
-
-            </div>
-
-
-            <div class="stat">
-
-                <strong>100+</strong>
-
-                <span>
-                    iPads konfiguriert
-                </span>
-
-            </div>
-
-
-            <div class="stat">
-
-                <strong>∞</strong>
-
-                <span>
-                    Lernbereitschaft
-                </span>
-
-            </div>
-
-        </section>
-
-
-        <!-- ÜBER MICH -->
-
-        <section id="about" class="section">
-
-            <p class="section-label">
-                01 / ÜBER MICH
-            </p>
-
-            <h2>
-                Wer ich bin
-            </h2>
-
-            <div class="about-grid">
-
-                <div>
-
-                    <p>
-                        Ich interessiere mich seit mehreren Jahren
-                        für Informatik und technische Systeme.
-                        Besonders spannend finde ich es, technische
-                        Probleme zu analysieren und Lösungen dafür
-                        zu finden.
-                    </p>
-
-                    <p>
-                        Während meiner bisherigen Ausbildung zum
-                        Fachinformatiker für Systemintegration konnte
-                        ich praktische Erfahrungen im IT-Support sammeln.
-                    </p>
-
-                    <p>
-                        Dabei habe ich unter anderem mit ServiceNow
-                        gearbeitet, Hardware eingerichtet und
-                        ausgetauscht, Fehler analysiert und Anwender
-                        unterstützt.
-                    </p>
-
-                </div>
-
-
-                <div class="about-terminal">
-
-                    <p>
-                        <span class="green">$</span> cat about.txt
-                    </p>
-
-                    <p>
-                        Interesse: IT & Technik
-                    </p>
-
-                    <p>
-                        Schwerpunkt: Systemintegration
-                    </p>
-
-                    <p>
-                        Standort: Hamburg
-                    </p>
-
-                    <p>
-                        Ziel: IT-Ausbildung erfolgreich abschließen
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- FÄHIGKEITEN -->
-
-        <section id="skills" class="section">
-
-            <p class="section-label">
-                02 / FÄHIGKEITEN
-            </p>
-
-            <h2>
-                Technologien & Skills
-            </h2>
-
-            <p class="section-intro">
-                Bereiche, mit denen ich bereits gearbeitet habe
-                oder in denen ich meine Kenntnisse weiter ausbaue.
-            </p>
-
-
-            <div class="skills-grid">
-
-                <div class="skill-card">
-
-                    <span class="skill-number">
-                        01
-                    </span>
-
-                    <h3>
-                        IT Support
-                    </h3>
-
-                    <p>
-                        Anwendersupport, Fehleranalyse,
-                        Ticketbearbeitung und technische
-                        Dokumentation.
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <span class="skill-number">
-                        02
-                    </span>
-
-                    <h3>
-                        Hardware
-                    </h3>
-
-                    <p>
-                        Einrichtung, Austausch und
-                        Fehlerbehebung von IT-Geräten.
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <span class="skill-number">
-                        03
-                    </span>
-
-                    <h3>
-                        ServiceNow
-                    </h3>
-
-                    <p>
-                        Bearbeitung und Dokumentation von
-                        Tickets und Incidents.
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <span class="skill-number">
-                        04
-                    </span>
-
-                    <h3>
-                        Windows
-                    </h3>
-
-                    <p>
-                        Einrichtung, Konfiguration und
-                        grundlegendes Troubleshooting.
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <span class="skill-number">
-                        05
-                    </span>
-
-                    <h3>
-                        Netzwerke
-                    </h3>
-
-                    <p>
-                        Grundlagen von Netzwerken,
-                        Geräten und Systemen.
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <span class="skill-number">
-                        06
-                    </span>
-
-                    <h3>
-                        Git & GitHub
-                    </h3>
-
-                    <p>
-                        Versionskontrolle und Verwaltung
-                        eigener Projekte.
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <span class="skill-number">
-                        07
-                    </span>
-
-                    <h3>
-                        HTML / CSS
-                    </h3>
-
-                    <p>
-                        Aufbau und Gestaltung eigener
-                        Webseiten und Projekte.
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <span class="skill-number">
-                        08
-                    </span>
-
-                    <h3>
-                        JavaScript
-                    </h3>
-
-                    <p>
-                        Grundlagen der Programmierung
-                        und Entwicklung eigener Projekte.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ERFAHRUNG -->
-
-        <section id="experience" class="section">
-
-            <p class="section-label">
-                03 / ERFAHRUNG
-            </p>
-
-            <h2>
-                Meine Erfahrung
-            </h2>
-
-
-            <div class="experience-card">
-
-                <div class="experience-year">
-                    2025
-                </div>
-
-
-                <div class="experience-content">
-
-                    <p class="experience-company">
-                        Veolia
-                    </p>
-
-                    <h3>
-                        Fachinformatiker für Systemintegration
-                    </h3>
-
-                    <p>
-                        Praktische Erfahrungen im IT-Support,
-                        unter anderem mit ServiceNow,
-                        Hardware-Einrichtung, Fehleranalyse,
-                        Laptop-Setup und Anwenderbetreuung.
-                    </p>
-
-
-                    <div class="tags">
-
-                        <span>ServiceNow</span>
-                        <span>IT Support</span>
-                        <span>Hardware</span>
-                        <span>Windows</span>
-                        <span>Troubleshooting</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- PROJEKTE -->
-
-        <section id="projects" class="section">
-
-            <p class="section-label">
-                04 / PROJEKTE
-            </p>
-
-            <h2>
-                Meine Projekte
-            </h2>
-
-            <p class="section-intro">
-                Praktische Projekte und Aufgaben, an denen ich
-                gearbeitet habe. Dieser Bereich wird mit neuen
-                GitHub-Projekten weiter wachsen.
-            </p>
-
-
-            <div class="projects-grid">
-
-
-                <!-- PROJEKT 1 -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-
-                        <span class="project-number">
-                            01
-                        </span>
-
-                        <span class="project-type">
-                            WEBSITE
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        IT Portfolio
-                    </h3>
-
-                    <p>
-                        Meine persönliche Portfolio-Website zur
-                        Darstellung meiner IT-Erfahrungen,
-                        Fähigkeiten und zukünftigen Projekte.
-                    </p>
-
-
-                    <div class="tags">
-
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>GitHub</span>
-                        <span>Vercel</span>
-
-                    </div>
-
-
-                    <a
-                        href="https://github.com/yussofzais-cloud/solaiman-portfolio"
-                        target="_blank"
-                        class="project-link"
-                    >
-                        GitHub ansehen →
-                    </a>
-
-                </article>
-
-
-                <!-- PROJEKT 2 -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-
-                        <span class="project-number">
-                            02
-                        </span>
-
-                        <span class="project-type">
-                            IT SUPPORT
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        iPad Deployment
-                    </h3>
-
-                    <p>
-                        Selbstständige Konfiguration und Vorbereitung
-                        von rund 100 Apple iPads für eine interne
-                        Firmenumfrage bei Veolia innerhalb einer
-                        vorgegebenen Deadline.
-                    </p>
-
-
-                    <div class="tags">
-
-                        <span>Apple iPad</span>
-                        <span>iTunes</span>
-                        <span>Konfiguration</span>
-                        <span>IT Support</span>
-
-                    </div>
-
-
-                    <span class="project-link">
-                        Praktisches IT-Projekt
-                    </span>
-
-                </article>
-
-
-                <!-- PLATZHALTER FÜR ZUKÜNFTIGE PROJEKTE -->
-
-                <article class="project-card future-project">
-
-                    <div class="project-top">
-
-                        <span class="project-number">
-                            03
-                        </span>
-
-                        <span class="project-type">
-                            COMING SOON
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        Nächstes Projekt
-                    </h3>
-
-                    <p>
-                        Hier wird zukünftig ein weiteres eigenes
-                        IT-Projekt mit einem direkten GitHub-Link
-                        ergänzt.
-                    </p>
-
-
-                    <span class="project-link">
-                        Bald verfügbar
-                    </span>
-
-                </article>
-
-
-            </div>
-
-
-            <div class="all-projects">
-
-                <a
-                    href="https://github.com/yussofzais-cloud"
-                    target="_blank"
-                    class="button secondary"
-                >
-                    Alle Projekte auf GitHub →
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- KONTAKT -->
-
-        <section id="contact" class="contact-section">
-
-            <p class="section-label">
-                05 / KONTAKT
-            </p>
-
-            <h2>
-                Bereit für neue Möglichkeiten?
-            </h2>
-
-            <p>
-                Ich möchte mich im IT-Bereich weiterentwickeln,
-                praktische Erfahrungen sammeln und langfristig
-                als Fachinformatiker für Systemintegration arbeiten.
-            </p>
-
-
-            <a
-                href="mailto:DEINE-EMAIL@EMAIL.DE"
-                class="button primary"
-            >
-                Kontakt aufnehmen →
+            <a href="projects.html" class="button primary">
+                Zu meinen Projekten
             </a>
 
-        </section>
+            <a href="contact.html" class="button secondary">
+                Kontakt aufnehmen
+            </a>
 
-    </main>
+        </div>
+
+    </div>
 
 
-    <!-- FOOTER -->
+    <!-- TERMINAL -->
 
-    <footer>
+    <div class="terminal-window">
 
-        <div class="footer-main">
+        <div class="terminal-header">
 
-            <div>
-
-                <a href="#home" class="logo">
-                    Solaiman<span>.</span>
-                </a>
-
-                <p>
-                    IT Support · Systemintegration · Technik
-                </p>
-
+            <div class="terminal-dots">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
 
+            <span>solaiman@portfolio:~</span>
 
-            <div class="social-links">
+        </div>
 
-                <a
-                    href="https://github.com/yussofzais-cloud"
-                    target="_blank"
-                >
-                    GitHub
-                </a>
+        <div class="terminal-body">
 
-                <a href="#">
-                    LinkedIn
-                </a>
+            <p>
+                <span class="green">$</span> cat profile.txt
+            </p>
 
-                <a href="mailto:DEINE-EMAIL@EMAIL.DE">
-                    E-Mail
-                </a>
+            <p class="terminal-space">
+                Name: Mohammad Solaiman Yussofzai
+            </p>
 
-            </div>
+            <p>
+                Standort: Hamburg, Deutschland
+            </p>
+
+            <p>
+                Fokus: IT Support / Systemintegration
+            </p>
+
+            <p>
+                Erfahrung: IT Support
+            </p>
+
+            <p>
+                Projekte: 2+
+            </p>
+
+            <p>
+                Status:
+                <span class="status">
+                    ● Offen für neue Möglichkeiten
+                </span>
+            </p>
+
+            <p class="terminal-cursor">
+                $
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STATS ================= -->
+
+<section class="stats-section">
+
+    <div class="stat-card">
+        <strong>100+</strong>
+        <span>iPads vorbereitet</span>
+    </div>
+
+    <div class="stat-card">
+        <strong>1</strong>
+        <span>IT-Ausbildung begonnen</span>
+    </div>
+
+    <div class="stat-card">
+        <strong>2+</strong>
+        <span>Portfolio-Projekte</span>
+    </div>
+
+    <div class="stat-card">
+        <strong>∞</strong>
+        <span>Lernbereitschaft</span>
+    </div>
+
+</section>
+
+
+<!-- ================= TECHNOLOGIEN ================= -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <span class="section-command">
+            $ ls technologies
+        </span>
+
+        <h2>Technologien im Fokus</h2>
+
+        <p>
+            Technologien und Bereiche, mit denen ich bereits
+            praktische Erfahrungen gesammelt habe oder mein
+            Wissen aktuell weiter ausbaue.
+        </p>
+
+    </div>
+
+
+    <div class="technology-grid">
+
+        <div class="technology-card">
+            <div class="technology-icon">▣</div>
+            <h3>Windows</h3>
+            <p>Installation, Einrichtung und Support</p>
+        </div>
+
+        <div class="technology-card">
+            <div class="technology-icon">⚙</div>
+            <h3>Hardware</h3>
+            <p>PCs, Laptops und Peripheriegeräte</p>
+        </div>
+
+        <div class="technology-card">
+            <div class="technology-icon">⌘</div>
+            <h3>ServiceNow</h3>
+            <p>Tickets und IT-Service-Prozesse</p>
+        </div>
+
+        <div class="technology-card">
+            <div class="technology-icon">⌁</div>
+            <h3>Netzwerke</h3>
+            <p>Grundlagen und Fehleranalyse</p>
+        </div>
+
+        <div class="technology-card">
+            <div class="technology-icon">&lt;/&gt;</div>
+            <h3>HTML / CSS</h3>
+            <p>Webseiten und Portfolio-Entwicklung</p>
+        </div>
+
+        <div class="technology-card">
+            <div class="technology-icon">JS</div>
+            <h3>JavaScript</h3>
+            <p>Grundlagen und eigene Projekte</p>
+        </div>
+
+    </div>
+
+
+    <div class="section-link">
+
+        <a href="skills.html">
+            Alle Fähigkeiten anzeigen →
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta-section">
+
+    <div class="cta-terminal">
+        $ echo "ready_to_build"
+    </div>
+
+    <h2>
+        Bereit, gemeinsam etwas aufzubauen?
+    </h2>
+
+    <p>
+        Ich bin offen für neue Möglichkeiten, praktische
+        IT-Erfahrungen und spannende Projekte.
+    </p>
+
+    <div class="hero-buttons">
+
+        <a href="projects.html" class="button primary">
+            Projekte ansehen
+        </a>
+
+        <a href="contact.html" class="button secondary">
+            Kontakt aufnehmen
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="logo">
+                Solaiman<span>.</span>
+            </a>
+
+            <p>
+                IT Support · Systemintegration · Technik
+            </p>
 
         </div>
 
 
-        <div class="footer-bottom">
+        <div class="footer-links">
 
-            <p>
-                © 2026 Mohammad Solaiman Yussofzai
-            </p>
+            <a
+                href="https://github.com/yussofzais-cloud"
+                target="_blank"
+            >
+                GitHub
+            </a>
 
-            <p>
-                Built with HTML, CSS, JavaScript, GitHub & Vercel
-            </p>
+            <a href="contact.html">
+                Kontakt
+            </a>
 
-            <p class="status">
-                ● Offen für neue Möglichkeiten
-            </p>
+            <a href="mailto:solaimanyussofzai@gmail.com">
+                E-Mail
+            </a>
 
         </div>
 
-    </footer>
+    </div>
 
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 Mohammad Solaiman Yussofzai
+        </span>
+
+        <span>
+            Built with HTML, CSS, JavaScript, GitHub & Vercel
+        </span>
+
+        <span class="footer-status">
+            ● Offen für neue Möglichkeiten
+        </span>
+
+    </div>
+
+</footer>
 
 </body>
-
 </html>
