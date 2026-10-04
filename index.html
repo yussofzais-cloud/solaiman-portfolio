@@ -1,508 +1,2061 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mohammad Solaiman Yussofzai | IT Portfolio</title>
+  <title>solaiman_ — IT Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+  <meta
+    name="description"
+    content="IT Portfolio von Mohammad Solaiman Yussofzai – IT Support und angehender Fachinformatiker für Systemintegration."
+  >
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    :root {
+      --bg: #050806;
+      --panel: #0b100d;
+      --panel2: #101812;
+      --line: #1e3327;
 
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+      --text: #edf7ef;
+      --muted: #82958a;
+
+      --green: #39ff88;
+      --green2: #19d96a;
+      --yellow: #f5d547;
+      --orange: #ff9d2e;
+      --red: #ff5c67;
+
+      --shadow: 0 25px 80px rgba(0, 0, 0, .48);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background:
+        radial-gradient(
+          circle at 50% -10%,
+          rgba(57, 255, 136, .08),
+          transparent 35%
+        ),
+        linear-gradient(rgba(57,255,136,.018) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(57,255,136,.018) 1px, transparent 1px),
+        var(--bg);
+
+      background-size:
+        auto,
+        45px 45px,
+        45px 45px,
+        auto;
+
+      color: var(--text);
+      font-family:
+        Consolas,
+        "Courier New",
+        monospace;
+
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    textarea {
+      font: inherit;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: auto;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+      background: rgba(5, 8, 6, .9);
+      backdrop-filter: blur(14px);
+
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      min-height: 70px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 30px;
+    }
+
+    .logo {
+      color: var(--green);
+      font-weight: 700;
+      font-size: 18px;
+
+      text-shadow:
+        0 0 15px rgba(57,255,136,.3);
+    }
+
+    .navlinks {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+
+      list-style: none;
+    }
+
+    .navlinks a {
+      color: var(--muted);
+      font-size: 13px;
+
+      transition: .2s;
+    }
+
+    .navlinks a:hover,
+    .navlinks a.active {
+      color: var(--green);
+    }
+
+    /* =========================
+       GENERAL
+    ========================= */
+
+    main section {
+      display: none;
+    }
+
+    main section.active {
+      display: block;
+    }
+
+    .page {
+      padding: 100px 0;
+      min-height: calc(100vh - 70px);
+    }
+
+    .terminal-label {
+      color: var(--yellow);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .section-title {
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(30px, 5vw, 48px);
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+
+    .section-title p {
+      color: var(--muted);
+      max-width: 700px;
+    }
+
+    .green {
+      color: var(--green);
+    }
+
+    .yellow {
+      color: var(--yellow);
+    }
+
+    .orange {
+      color: var(--orange);
+    }
+
+    /* =========================
+       BUTTONS
+    ========================= */
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 12px 18px;
+
+      border: 1px solid var(--green);
+      color: var(--green);
+
+      background: #0b140f;
+
+      transition: .2s;
+    }
+
+    .btn:hover {
+      background: var(--green);
+      color: #07100a;
+
+      transform: translateY(-2px);
+
+      box-shadow:
+        0 0 28px rgba(57,255,136,.22);
+    }
+
+    .btn.secondary {
+      border-color: var(--line);
+      color: var(--text);
+      background: transparent;
+    }
+
+    .btn.secondary:hover {
+      border-color: var(--green);
+      color: var(--green);
+      background: transparent;
+    }
+
+    /* =========================
+       START
+    ========================= */
+
+    .hero {
+      min-height: calc(100vh - 70px);
+
+      display: grid;
+      place-items: center;
+
+      text-align: center;
+
+      padding: 90px 0 100px;
+
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content:
+        "01 10 01 00 11 01 10 01 00 11";
+
+      position: absolute;
+
+      top: 20%;
+      left: -5%;
+
+      color: rgba(57,255,136,.045);
+
+      font-size: 13px;
+      letter-spacing: 12px;
+
+      white-space: nowrap;
+
+      transform: rotate(-5deg);
+    }
+
+    .hero::after {
+      content: "";
+
+      position: absolute;
+
+      width: 520px;
+      height: 520px;
+
+      border: 1px solid rgba(57,255,136,.06);
+
+      border-radius: 50%;
+
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -52%);
+
+      box-shadow:
+        0 0 100px rgba(57,255,136,.035);
+
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .cursor {
+      display: inline-block;
+
+      width: 9px;
+      height: 18px;
+
+      background: var(--green);
+
+      vertical-align: -3px;
+
+      animation: blink 1s steps(2, end) infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .hero h1 {
+      font-size: clamp(40px, 7vw, 84px);
+
+      line-height: 1.02;
+
+      letter-spacing: -3px;
+
+      margin-bottom: 25px;
+
+      text-shadow:
+        0 0 45px rgba(57,255,136,.08);
+    }
+
+    .hero h1 .green {
+      color: var(--green);
+
+      text-shadow:
+        0 0 28px rgba(57,255,136,.3);
+    }
+
+    .hero h1 .dim {
+      display: block;
+      color: #c1ccc4;
+    }
+
+    .role {
+      font-size: clamp(15px, 2vw, 20px);
+
+      color: var(--muted);
+
+      max-width: 720px;
+
+      margin: 0 auto 25px;
+    }
+
+    .intro {
+      color: #b7c5bb;
+
+      font-size: 14px;
+
+      max-width: 680px;
+
+      margin: 0 auto 32px;
+    }
+
+    .start-stats {
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap: 12px;
+
+      margin-top: 55px;
+
+      text-align: left;
+    }
+
+    .stat {
+      position: relative;
+
+      padding: 20px;
+
+      border:
+        1px solid var(--line);
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(13,22,16,.95),
+          rgba(7,12,9,.95)
+        );
+
+      transition: .25s;
+
+      overflow: hidden;
+    }
+
+    .stat::before {
+      content: "";
+
+      position: absolute;
+
+      left: 0;
+      top: 0;
+
+      width: 3px;
+      height: 100%;
+
+      background: var(--green);
+
+      box-shadow:
+        0 0 16px rgba(57,255,136,.35);
+    }
+
+    .stat:hover {
+      transform: translateY(-4px);
+
+      border-color: #315b42;
+    }
+
+    .stat strong {
+      display: block;
+
+      color: var(--green);
+
+      font-size: 23px;
+
+      margin-bottom: 4px;
+    }
+
+    .stat span {
+      color: var(--muted);
+
+      font-size: 12px;
+    }
+
+    /* =========================
+       CARDS
+    ========================= */
+
+    .card-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, 1fr);
+
+      gap: 18px;
+    }
+
+    .card {
+      position: relative;
+
+      padding: 28px;
+
+      border: 1px solid var(--line);
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(14,23,17,.95),
+          rgba(7,11,9,.95)
+        );
+
+      box-shadow: var(--shadow);
+
+      transition: .25s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+
+      border-color:
+        rgba(57,255,136,.35);
+    }
+
+    .card h3 {
+      color: var(--green);
+
+      margin-bottom: 15px;
+
+      font-size: 19px;
+    }
+
+    .card p {
+      color: var(--muted);
+
+      font-size: 14px;
+    }
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about-grid {
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 24px;
+    }
+
+    .profile-list {
+      display: grid;
+
+      gap: 14px;
+
+      margin-top: 20px;
+    }
+
+    .profile-item {
+      padding: 15px;
+
+      border: 1px solid var(--line);
+
+      background: rgba(8,14,10,.7);
+    }
+
+    .profile-item span {
+      display: block;
+
+      color: var(--muted);
+
+      font-size: 12px;
+
+      margin-bottom: 4px;
+    }
+
+    .profile-item strong {
+      color: var(--text);
+    }
+
+    .timeline {
+      position: relative;
+
+      margin-top: 25px;
+
+      padding-left: 25px;
+
+      border-left: 1px solid var(--line);
+    }
+
+    .timeline-item {
+      position: relative;
+
+      margin-bottom: 30px;
+    }
+
+    .timeline-item::before {
+      content: "";
+
+      position: absolute;
+
+      left: -31px;
+      top: 5px;
+
+      width: 10px;
+      height: 10px;
+
+      background: var(--green);
+
+      border-radius: 50%;
+
+      box-shadow:
+        0 0 14px rgba(57,255,136,.5);
+    }
+
+    .timeline-item small {
+      color: var(--yellow);
+    }
+
+    .timeline-item h3 {
+      color: var(--text);
+
+      margin: 5px 0;
+    }
+
+    .timeline-item p {
+      color: var(--muted);
+
+      font-size: 13px;
+    }
+
+    /* =========================
+       SKILLS
+    ========================= */
+
+    .skills-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, 1fr);
+
+      gap: 18px;
+
+      margin-bottom: 40px;
+    }
+
+    .skill {
+      padding: 22px;
+
+      border: 1px solid var(--line);
+
+      background: var(--panel);
+
+      transition: .25s;
+    }
+
+    .skill:hover {
+      border-color:
+        rgba(57,255,136,.35);
+
+      transform: translateY(-3px);
+    }
+
+    .skill-top {
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 15px;
+
+      margin-bottom: 10px;
+    }
+
+    .skill h3 {
+      color: var(--text);
+
+      font-size: 16px;
+    }
+
+    .skill-level {
+      color: var(--green);
+
+      font-size: 11px;
+
+      border:
+        1px solid rgba(57,255,136,.25);
+
+      padding: 4px 8px;
+    }
+
+    .skill-detail {
+      color: var(--muted);
+
+      font-size: 12px;
+    }
+
+    .tags {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 8px;
+    }
+
+    .tag {
+      padding: 7px 10px;
+
+      border: 1px solid var(--line);
+
+      background: #0a100c;
+
+      color: var(--muted);
+
+      font-size: 12px;
+
+      transition: .2s;
+    }
+
+    .tag:hover {
+      color: var(--green);
+
+      border-color: var(--green);
+    }
+
+    /* =========================
+       PROJECTS
+    ========================= */
+
+    .projects {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 18px;
+    }
+
+    .project-number {
+      color: var(--yellow);
+
+      font-size: 12px;
+
+      margin-bottom: 12px;
+    }
+
+    .project h3 {
+      color: var(--green);
+
+      margin-bottom: 12px;
+    }
+
+    .project p {
+      margin-bottom: 20px;
+    }
+
+    .project .tags {
+      margin-bottom: 20px;
+    }
+
+    .project-link {
+      color: var(--green);
+
+      font-size: 13px;
+    }
+
+    /* =========================
+       BLOG
+    ========================= */
+
+    .blog-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 18px;
+    }
+
+    .blog-date {
+      color: var(--yellow);
+
+      font-size: 11px;
+
+      margin-bottom: 10px;
+    }
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact-grid {
+      display: grid;
+
+      grid-template-columns:
+        1.2fr .8fr;
+
+      gap: 25px;
+    }
+
+    form {
+      display: grid;
+
+      gap: 16px;
+    }
+
+    label {
+      color: var(--orange);
+
+      font-size: 13px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+
+      margin-top: 7px;
+
+      padding: 13px 14px;
+
+      border: 1px solid var(--line);
+
+      outline: none;
+
+      background: #070c08;
+
+      color: var(--text);
+
+      transition: .2s;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: var(--orange);
+
+      box-shadow:
+        0 0 20px rgba(255,157,46,.08);
+    }
+
+    textarea {
+      min-height: 150px;
+
+      resize: vertical;
+    }
+
+    .contact-info {
+      display: grid;
+
+      gap: 14px;
+    }
+
+    .contact-item {
+      padding: 18px;
+
+      border: 1px solid var(--line);
+
+      background: var(--panel);
+
+      transition: .2s;
+    }
+
+    .contact-item:hover {
+      transform: translateX(4px);
+
+      border-color:
+        rgba(57,255,136,.35);
+    }
+
+    .contact-item span {
+      display: block;
+
+      color: var(--muted);
+
+      font-size: 11px;
+
+      margin-bottom: 5px;
+    }
+
+    .contact-item strong {
+      color: var(--text);
+
+      font-size: 14px;
+    }
+
+    .available {
+      color: var(--green) !important;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      border-top: 1px solid var(--line);
+
+      padding: 30px 0;
+
+      color: var(--muted);
+
+      font-size: 12px;
+    }
+
+    .footer-inner {
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 20px;
+    }
+
+    footer a {
+      color: var(--green);
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 850px) {
+
+      .nav {
+        flex-direction: column;
+
+        padding: 16px 0;
+      }
+
+      .navlinks {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 12px 16px;
+      }
+
+      .hero {
+        padding-top: 65px;
+      }
+
+      .start-stats {
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .projects,
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 550px) {
+
+      .container {
+        width: min(
+          100% - 26px,
+          1120px
+        );
+      }
+
+      .page {
+        padding: 70px 0;
+      }
+
+      .hero h1 {
+        font-size: 43px;
+
+        letter-spacing: -2px;
+      }
+
+      .start-stats,
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .buttons {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- ================= NAVIGATION ================= -->
+  <!-- =========================
+       HEADER
+  ========================= -->
 
-<header class="navbar">
+  <header>
 
-    <div class="nav-container">
+    <div class="container nav">
 
-        <a href="index.html" class="logo">
-            Mohammad <span>Solaiman</span>
-        </a>
+      <a
+        href="#start"
+        class="logo"
+      >
+        solaiman_/
+      </a>
 
-        <nav>
+      <nav>
 
-            <a href="index.html" class="active">Start</a>
+        <ul class="navlinks">
 
-            <a href="about.html">Über mich</a>
+          <li>
+            <a
+              href="#start"
+              class="active"
+            >
+              Start
+            </a>
+          </li>
 
-            <a href="skills.html">Fähigkeiten</a>
+          <li>
+            <a href="#about">
+              Über mich
+            </a>
+          </li>
 
-            <a href="experience.html">Werdegang</a>
+          <li>
+            <a href="#skills">
+              Fähigkeiten
+            </a>
+          </li>
 
-            <a href="projects.html">Projekte</a>
+          <li>
+            <a href="#projects">
+              Projekte
+            </a>
+          </li>
 
-            <a href="blog.html">Blog</a>
+          <li>
+            <a href="#blog">
+              Blog
+            </a>
+          </li>
 
-            <a href="contact.html">Kontakt</a>
+          <li>
+            <a href="#contact">
+              Kontakt
+            </a>
+          </li>
 
-        </nav>
+        </ul>
 
-        <a
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- =========================
+         START
+    ========================= -->
+
+    <section
+      id="start"
+      class="hero active"
+    >
+
+      <div class="container hero-content">
+
+        <div class="terminal-label">
+          $ whoami
+          <span class="cursor"></span>
+        </div>
+
+        <h1>
+          <span class="green">
+            Mohammad
+          </span>
+
+          <span class="dim">
+            Solaiman Yussofzai
+          </span>
+        </h1>
+
+        <p class="role">
+
+          IT Support &
+          angehender Fachinformatiker
+          für Systemintegration
+
+          <br>
+
+          <span class="green">
+            Praktisch.
+          </span>
+
+          <span class="yellow">
+            Lernbereit.
+          </span>
+
+          <span class="orange">
+            Technikbegeistert.
+          </span>
+
+        </p>
+
+        <p class="intro">
+
+          Ich interessiere mich für IT-Systeme,
+          Hardware und Problemlösungen und möchte
+          meine Kenntnisse Schritt für Schritt
+          in der Praxis weiterentwickeln.
+
+        </p>
+
+        <div class="buttons">
+
+          <a
+            href="#projects"
+            class="btn"
+          >
+            &gt; Zu meinen Projekten
+          </a>
+
+          <a
+            href="#contact"
+            class="btn secondary"
+          >
+            Kontakt aufnehmen
+          </a>
+
+          <a
             href="https://github.com/yussofzais-cloud"
             target="_blank"
-            class="github-link"
-        >
-            GitHub ↗
-        </a>
-
-    </div>
-
-</header>
-
-
-<!-- ================= HERO ================= -->
-
-<main>
-
-<section class="hero">
-
-    <div class="hero-content">
-
-        <div class="terminal-command">
-            <span class="yellow">$</span>
-            <span class="green">whoami</span>
-        </div>
-
-
-        <div class="hero-name">
-
-            <h1>Mohammad</h1>
-
-            <h1 class="green-text">
-                Solaiman Yussofzai<span class="cursor">_</span>
-            </h1>
+            rel="noreferrer"
+            class="btn secondary"
+          >
+            ⌘ GitHub ansehen
+          </a>
 
         </div>
 
 
-        <p class="hero-description">
+        <div class="start-stats">
 
-            Ich interessiere mich für IT-Systeme, Hardware und
-            technische Problemlösungen und entwickle meine
-            Kenntnisse im Bereich Fachinformatik für
-            Systemintegration kontinuierlich weiter.
-
-        </p>
-
-
-        <div class="hero-buttons">
-
-            <a href="projects.html" class="btn btn-primary">
-                &lt;/&gt; Zu meinen Projekten
-            </a>
-
-            <a href="contact.html" class="btn btn-secondary">
-                Kontakt aufnehmen ↗
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= STATUS ================= -->
-
-<section class="stats-section">
-
-    <div class="stats-container">
-
-        <div class="stat-card">
-
-            <span class="stat-number">1</span>
-
-            <span class="stat-label">
-                IT-Ausbildung begonnen
-            </span>
-
-        </div>
-
-
-        <div class="stat-card">
-
-            <span class="stat-number">100+</span>
-
-            <span class="stat-label">
-                Apple-Geräte konfiguriert
-            </span>
-
-        </div>
-
-
-        <div class="stat-card">
-
-            <span class="stat-number">IT</span>
-
-            <span class="stat-label">
-                Mein beruflicher Fokus
-            </span>
-
-        </div>
-
-
-        <div class="stat-card">
-
-            <span class="stat-number green-text">
-                ●
-            </span>
-
-            <span class="stat-label">
-                Offen für neue Möglichkeiten
-            </span>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= INTRO ================= -->
-
-<section class="home-section">
-
-    <div class="section-container">
-
-        <div class="section-terminal">
-
-            <span class="yellow">$</span>
-            <span class="green">cat</span>
-            profile.txt
-
-        </div>
-
-
-        <div class="intro-grid">
-
-            <div>
-
-                <span class="section-number">
-                    01 / ÜBER MICH
-                </span>
-
-                <h2>
-                    Mein Weg in die IT
-                </h2>
-
-            </div>
-
-
-            <div class="intro-text">
-
-                <p>
-                    Mein Interesse an Informatik und technischen
-                    Systemen begleitet mich bereits seit meiner
-                    Schulzeit.
-                </p>
-
-                <p>
-                    Durch meine Ausbildung zum Fachinformatiker für
-                    Systemintegration konnte ich erste praktische
-                    Erfahrungen im IT-Support sammeln und dabei
-                    viel über Hardware, Systeme, Fehleranalyse und
-                    den Umgang mit Anwendern lernen.
-                </p>
-
-                <a href="about.html" class="text-link">
-                    Mehr über mich →
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= SKILLS PREVIEW ================= -->
-
-<section class="home-section dark-section">
-
-    <div class="section-container">
-
-        <div class="section-terminal">
-
-            <span class="yellow">$</span>
-            <span class="green">ls</span>
-            skills/
-
-        </div>
-
-
-        <div class="section-title-row">
-
-            <div>
-
-                <span class="section-number">
-                    02 / FÄHIGKEITEN
-                </span>
-
-                <h2>
-                    Technischer Fokus
-                </h2>
-
-            </div>
-
-            <a href="skills.html" class="text-link">
-                Alle Fähigkeiten →
-            </a>
-
-        </div>
-
-
-        <div class="skills-preview">
-
-            <div class="skill-card">
-
-                <div class="skill-icon">
-                    IT
-                </div>
-
-                <h3>
-                    IT Support
-                </h3>
-
-                <p>
-                    Fehleranalyse, Anwenderunterstützung,
-                    Ticketbearbeitung und Dokumentation.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <div class="skill-icon">
-                    HW
-                </div>
-
-                <h3>
-                    Hardware
-                </h3>
-
-                <p>
-                    Einrichtung, Austausch, Konfiguration
-                    und Fehlerbehebung von Geräten.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <div class="skill-icon">
-                    SYS
-                </div>
-
-                <h3>
-                    Systeme
-                </h3>
-
-                <p>
-                    Grundlagen in Windows, Netzwerken,
-                    Geräten und Systemadministration.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <div class="skill-icon">
-                    WEB
-                </div>
-
-                <h3>
-                    Web & GitHub
-                </h3>
-
-                <p>
-                    HTML, CSS, GitHub und Aufbau eigener
-                    Webprojekte.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= FEATURED PROJECT ================= -->
-
-<section class="home-section">
-
-    <div class="section-container">
-
-        <div class="section-terminal">
-
-            <span class="yellow">$</span>
-            <span class="green">cat</span>
-            featured-project.txt
-
-        </div>
-
-
-        <div class="featured-project">
-
-            <div class="project-number">
-                PROJECT_01
-            </div>
-
-            <div class="project-content">
-
-                <span class="project-status">
-                    ● Abgeschlossen
-                </span>
-
-                <h2>
-                    100 Apple iPads konfigurieren
-                </h2>
-
-                <p>
-
-                    Im Rahmen einer Firmenumfrage bei Veolia
-                    habe ich selbstständig und eigenverantwortlich
-                    100 Apple iPads innerhalb einer vorgegebenen
-                    Deadline konfiguriert und für den Einsatz
-                    vorbereitet.
-
-                </p>
-
-
-                <div class="tags">
-
-                    <span>Apple iPad</span>
-
-                    <span>iTunes</span>
-
-                    <span>Hardware</span>
-
-                    <span>Konfiguration</span>
-
-                </div>
-
-
-                <a href="projects.html" class="btn btn-secondary">
-                    Projekt ansehen →
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= CTA ================= -->
-
-<section class="cta-section">
-
-    <div class="cta-container">
-
-        <div class="terminal-command">
-
-            <span class="yellow">$</span>
-            <span class="green">echo</span>
-            "Let's connect"
-
-        </div>
-
-
-        <h2>
-            Bereit für neue Möglichkeiten?
-        </h2>
-
-        <p>
-            Du möchtest mehr über mich, meine Erfahrungen
-            oder meine Projekte erfahren?
-        </p>
-
-
-        <a href="contact.html" class="btn btn-primary">
-            Kontakt aufnehmen →
-        </a>
-
-    </div>
-
-</section>
-
-</main>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer class="footer">
-
-    <div class="footer-container">
-
-        <div>
+          <div class="stat">
 
             <strong>
-                Mohammad <span>Solaiman</span>
+              IT
             </strong>
 
+            <span>
+              Fokus auf Support &
+              Systemintegration
+            </span>
+
+          </div>
+
+
+          <div class="stat">
+
+            <strong>
+              100+
+            </strong>
+
+            <span>
+              Apple-Geräte konfiguriert
+            </span>
+
+          </div>
+
+
+          <div class="stat">
+
+            <strong>
+              ServiceNow
+            </strong>
+
+            <span>
+              Ticketing &
+              Dokumentation
+            </span>
+
+          </div>
+
+
+          <div class="stat">
+
+            <strong>
+              Open
+            </strong>
+
+            <span>
+              für neue IT-Möglichkeiten
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ÜBER MICH
+    ========================= -->
+
+    <section
+      id="about"
+      class="page"
+    >
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <div class="terminal-label">
+            $ cat profile.txt
+          </div>
+
+          <h2>
+            Über mich &
+            <span class="green">
+              Werdegang
+            </span>
+          </h2>
+
+          <p>
+            Mein Weg in die IT, meine praktische
+            Erfahrung und meine nächsten Ziele.
+          </p>
+
+        </div>
+
+
+        <div class="about-grid">
+
+          <div class="card">
+
+            <h3>
+              Mohammad Solaiman Yussofzai
+            </h3>
+
             <p>
-                IT Portfolio · Hamburg
+              Ich interessiere mich besonders für
+              IT-Systeme, Hardware und technische
+              Problemlösungen.
             </p>
 
+            <p style="margin-top:15px;">
+              Durch meine bisherige praktische
+              Erfahrung konnte ich erste Einblicke
+              in IT-Support, Ticketbearbeitung,
+              Hardware und Anwenderbetreuung sammeln.
+            </p>
+
+            <p style="margin-top:15px;">
+              Mein Ziel ist es, meine Kenntnisse
+              weiter auszubauen und langfristig
+              im Bereich Systemintegration zu arbeiten.
+            </p>
+
+
+            <div class="profile-list">
+
+              <div class="profile-item">
+
+                <span>
+                  Standort
+                </span>
+
+                <strong>
+                  Hamburg, Deutschland
+                </strong>
+
+              </div>
+
+
+              <div class="profile-item">
+
+                <span>
+                  Fokus
+                </span>
+
+                <strong>
+                  IT Support / Systemintegration
+                </strong>
+
+              </div>
+
+
+              <div class="profile-item">
+
+                <span>
+                  Arbeitsweise
+                </span>
+
+                <strong>
+                  lernen → ausprobieren → lösen
+                </strong>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="card">
+
+            <h3>
+              Werdegang
+            </h3>
+
+            <div class="timeline">
+
+              <div class="timeline-item">
+
+                <small>
+                  2024
+                </small>
+
+                <h3>
+                  MSA
+                </h3>
+
+                <p>
+                  Stadtteilschule am Heidberg
+                </p>
+
+              </div>
+
+
+              <div class="timeline-item">
+
+                <small>
+                  2025
+                </small>
+
+                <h3>
+                  Fachinformatiker für
+                  Systemintegration
+                </h3>
+
+                <p>
+                  Praktische Einblicke in
+                  IT-Support, Hardware,
+                  Ticketing und Anwendersupport.
+                </p>
+
+              </div>
+
+
+              <div class="timeline-item">
+
+                <small>
+                  2026
+                </small>
+
+                <h3>
+                  Weiterentwicklung im IT-Bereich
+                </h3>
+
+                <p>
+                  Aufbau eigener Projekte,
+                  Vertiefung technischer Kenntnisse
+                  und Vorbereitung auf den nächsten
+                  beruflichen Schritt.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         FÄHIGKEITEN
+    ========================= -->
+
+    <section
+      id="skills"
+      class="page"
+    >
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <div class="terminal-label">
+            $ ls skills/
+          </div>
+
+          <h2>
+            Meine
+            <span class="green">
+              Fähigkeiten
+            </span>
+          </h2>
+
+          <p>
+            Technische Kenntnisse und praktische
+            Erfahrungen, die ich aktuell weiter ausbaue.
+          </p>
+
         </div>
 
 
-        <div class="footer-links">
+        <div class="skills-grid">
+
+          <div class="skill">
+
+            <div class="skill-top">
+
+              <h3>
+                IT Support &
+                Troubleshooting
+              </h3>
+
+              <span class="skill-level">
+                Praxis
+              </span>
+
+            </div>
+
+            <p class="skill-detail">
+              Fehleranalyse, Störungsbearbeitung
+              und Unterstützung bei technischen
+              Problemen.
+            </p>
+
+          </div>
+
+
+          <div class="skill">
+
+            <div class="skill-top">
+
+              <h3>
+                Hardware & Geräte
+              </h3>
+
+              <span class="skill-level">
+                Praxis
+              </span>
+
+            </div>
+
+            <p class="skill-detail">
+              Einrichtung, Konfiguration und
+              Austausch von Laptops,
+              Apple-Geräten und Zubehör.
+            </p>
+
+          </div>
+
+
+          <div class="skill">
+
+            <div class="skill-top">
+
+              <h3>
+                ServiceNow / Ticketing
+              </h3>
+
+              <span class="skill-level">
+                Praxis
+              </span>
+
+            </div>
+
+            <p class="skill-detail">
+              Tickets bearbeiten, Incidents
+              dokumentieren und Bearbeitungen
+              nachvollziehbar festhalten.
+            </p>
+
+          </div>
+
+
+          <div class="skill">
+
+            <div class="skill-top">
+
+              <h3>
+                Windows
+              </h3>
+
+              <span class="skill-level">
+                Grundlagen + Praxis
+              </span>
+
+            </div>
+
+            <p class="skill-detail">
+              Grundlegende Administration,
+              Einrichtung und Unterstützung
+              im Arbeitsalltag.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="card">
+
+          <h3>
+            Tech Stack
+          </h3>
+
+          <div class="tags">
+
+            <span class="tag">Windows</span>
+            <span class="tag">ServiceNow</span>
+            <span class="tag">Apple / iOS</span>
+            <span class="tag">MDM</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">Netzwerk-Grundlagen</span>
+            <span class="tag">iTunes</span>
+            <span class="tag">Problemlösung</span>
+            <span class="tag">Dokumentation</span>
+            <span class="tag">Anwendersupport</span>
+            <span class="tag">Gerätekonfiguration</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROJEKTE
+    ========================= -->
+
+    <section
+      id="projects"
+      class="page"
+    >
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <div class="terminal-label">
+            $ ls projects/
+          </div>
+
+          <h2>
+            Meine
+            <span class="green">
+              Projekte
+            </span>
+          </h2>
+
+          <p>
+            Praktische Erfahrungen und eigene
+            IT-Projekte.
+          </p>
+
+        </div>
+
+
+        <div class="projects">
+
+
+          <article class="card project">
+
+            <div class="project-number">
+              PROJECT_01
+            </div>
+
+            <h3>
+              100 Apple iPads
+            </h3>
+
+            <p>
+              Selbstständige Vorbereitung und
+              Konfiguration von rund 100 Apple iPads
+              für eine Unternehmensumfrage innerhalb
+              einer vorgegebenen Deadline.
+            </p>
+
+            <div class="tags">
+
+              <span class="tag">
+                Apple
+              </span>
+
+              <span class="tag">
+                iTunes
+              </span>
+
+              <span class="tag">
+                MDM
+              </span>
+
+            </div>
+
+            <span class="project-link">
+              Mehr erfahren →
+            </span>
+
+          </article>
+
+
+          <article class="card project">
+
+            <div class="project-number">
+              PROJECT_02
+            </div>
+
+            <h3>
+              IT Portfolio
+            </h3>
+
+            <p>
+              Eigenes Bewerbungsportfolio mit
+              responsivem Frontend, persönlicher
+              Präsentation und GitHub-Anbindung.
+            </p>
+
+            <div class="tags">
+
+              <span class="tag">
+                HTML
+              </span>
+
+              <span class="tag">
+                CSS
+              </span>
+
+              <span class="tag">
+                JavaScript
+              </span>
+
+              <span class="tag">
+                GitHub
+              </span>
+
+            </div>
 
             <a
-                href="https://github.com/yussofzais-cloud"
-                target="_blank"
+              class="project-link"
+              href="https://github.com/yussofzais-cloud"
+              target="_blank"
+              rel="noreferrer"
             >
-                GitHub
+              ⌘ Codes ansehen →
             </a>
 
-            <a href="mailto:solaimanyussofzai@gmail.com">
+          </article>
+
+
+          <article class="card project">
+
+            <div class="project-number">
+              PROJECT_03
+            </div>
+
+            <h3>
+              IT Support Praxis
+            </h3>
+
+            <p>
+              Praktische Erfahrungen mit Tickets,
+              Incidents, Troubleshooting,
+              Dokumentation, Hardware und
+              Anwenderunterstützung.
+            </p>
+
+            <div class="tags">
+
+              <span class="tag">
+                Support
+              </span>
+
+              <span class="tag">
+                ServiceNow
+              </span>
+
+            </div>
+
+            <a
+              href="#contact"
+              class="project-link"
+            >
+              Kontakt →
+            </a>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         BLOG
+    ========================= -->
+
+    <section
+      id="blog"
+      class="page"
+    >
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <div class="terminal-label">
+            $ cat blog.txt
+          </div>
+
+          <h2>
+            IT
+            <span class="green">
+              Blog
+            </span>
+          </h2>
+
+          <p>
+            Kleine Beiträge über Lernen,
+            IT und meine Entwicklung.
+          </p>
+
+        </div>
+
+
+        <div class="blog-grid">
+
+
+          <article class="card">
+
+            <div class="blog-date">
+              01 · IT SUPPORT
+            </div>
+
+            <h3>
+              Was ich im IT-Support gelernt habe
+            </h3>
+
+            <p>
+              Warum strukturiertes Arbeiten,
+              gute Dokumentation und
+              Problemanalyse im IT-Support
+              wichtig sind.
+            </p>
+
+          </article>
+
+
+          <article class="card">
+
+            <div class="blog-date">
+              02 · SYSTEMINTEGRATION
+            </div>
+
+            <h3>
+              Mein nächster Schritt in der IT
+            </h3>
+
+            <p>
+              Welche Bereiche mich besonders
+              interessieren und warum ich mich
+              langfristig auf Systemintegration
+              konzentrieren möchte.
+            </p>
+
+          </article>
+
+
+          <article class="card">
+
+            <div class="blog-date">
+              03 · LEARNING
+            </div>
+
+            <h3>
+              Kleine Projekte, große Lernschritte
+            </h3>
+
+            <p>
+              Wie ich durch eigene Projekte
+              praktische Erfahrungen sammle
+              und meine technischen Kenntnisse
+              erweitere.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         KONTAKT
+    ========================= -->
+
+    <section
+      id="contact"
+      class="page"
+    >
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <div class="terminal-label">
+            $ ./contact.sh
+          </div>
+
+          <h2>
+            Kontakt
+          </h2>
+
+          <p>
+            Du möchtest mich für eine IT-Stelle,
+            ein Praktikum oder eine andere
+            Möglichkeit kontaktieren?
+          </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+
+          <div class="card">
+
+            <form
+              onsubmit="sendMessage(event)"
+            >
+
+              <label>
+
+                &gt; Name
+
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Dein Name"
+                  required
+                >
+
+              </label>
+
+
+              <label>
+
+                &gt; E-Mail
+
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="deine@email.de"
+                  required
+                >
+
+              </label>
+
+
+              <label>
+
+                &gt; Nachricht
+
+                <textarea
+                  name="message"
+                  placeholder="Deine Nachricht..."
+                  required
+                ></textarea>
+
+              </label>
+
+
+              <button
+                type="submit"
+                class="btn"
+              >
+                &gt; Nachricht senden
+              </button>
+
+            </form>
+
+          </div>
+
+
+          <div class="contact-info">
+
+
+            <div class="contact-item">
+
+              <span>
                 E-Mail
-            </a>
+              </span>
 
-            <a href="tel:+4917631064908">
+              <strong>
+                solaimanyussofzai@gmail.com
+              </strong>
+
+            </div>
+
+
+            <div class="contact-item">
+
+              <span>
                 Telefon
-            </a>
+              </span>
+
+              <strong>
+                0176 31064908
+              </strong>
+
+            </div>
+
+
+            <div class="contact-item">
+
+              <span>
+                Standort
+              </span>
+
+              <strong>
+                Hamburg, Deutschland
+              </strong>
+
+            </div>
+
+
+            <div class="contact-item">
+
+              <span>
+                Status
+              </span>
+
+              <strong class="available">
+                ● Offen für neue IT-Möglichkeiten
+              </strong>
+
+            </div>
+
+
+          </div>
 
         </div>
 
+      </div>
 
-        <div class="footer-status">
+    </section>
 
-            <span class="status-dot"></span>
+  </main>
 
-            Offen für neue Möglichkeiten
 
-        </div>
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer>
+
+    <div class="container footer-inner">
+
+      <span>
+        © 2026 Mohammad Solaiman Yussofzai
+      </span>
+
+      <span>
+        Powered by:
+        <a
+          href="https://github.com/yussofzais-cloud"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+        </a>
+        · IT Portfolio
+      </span>
 
     </div>
 
+  </footer>
 
-    <div class="copyright">
 
-        © 2026 Mohammad Solaiman Yussofzai ·
-        Erstellt mit HTML, CSS, GitHub & Vercel
+  <!-- =========================
+       JAVASCRIPT
+  ========================= -->
 
-    </div>
+  <script>
 
-</footer>
+    const links =
+      [...document.querySelectorAll(".navlinks a")];
 
+    const sections =
+      [...document.querySelectorAll("main section")];
+
+
+    function showPage(id) {
+
+      const target =
+        document.getElementById(id)
+        ||
+        document.getElementById("start");
+
+
+      sections.forEach(section => {
+
+        section.classList.toggle(
+          "active",
+          section === target
+        );
+
+      });
+
+
+      links.forEach(link => {
+
+        link.classList.toggle(
+          "active",
+          link.getAttribute("href")
+          === "#"
+          + target.id
+        );
+
+      });
+
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+
+
+      document.title =
+        target.id === "start"
+
+        ? "solaiman_ — IT Portfolio"
+
+        : target.querySelector("h2")?.textContent
+          + " — solaiman_";
+    }
+
+
+    function navigate() {
+
+      showPage(
+        location.hash.slice(1)
+        || "start"
+      );
+
+    }
+
+
+    window.addEventListener(
+      "hashchange",
+      navigate
+    );
+
+
+    function sendMessage(event) {
+
+      event.preventDefault();
+
+      alert(
+        "Danke für deine Nachricht! " +
+        "Das Kontaktformular wird noch mit einem echten E-Mail-Dienst verbunden."
+      );
+
+      event.target.reset();
+
+    }
+
+
+    navigate();
+
+  </script>
 
 </body>
 </html>
